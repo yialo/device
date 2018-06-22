@@ -121,13 +121,15 @@ a {
   border-style: none;
   outline: 2px solid #000000;
   visibility: hidden;
+  transition: visibility 1ms;
 }
 
 .search-field:focus ~ .search-btn {
   visibility: visible;
 }
 
-.search-btn:hover {
+.search-btn:hover,
+.search-btn:focus {
   color: #ffffff;
 
   background-color: #000000;
