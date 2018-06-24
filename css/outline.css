@@ -9,13 +9,15 @@
 }
 
 .main-page {
-    background-image: url("../_tmp/device-index-overlays.jpg");
+    background-image: url("../_tmp/device-index.jpg");
+    /* background-image: url("../_tmp/device-index-overlays.jpg"); */
     background-repeat: no-repeat;
     background-position: -120px 0;
 }
 
 .inner-page {
-    background-image: url("../_tmp/device-catalog-overlays.jpg");
+    background-image: url("../_tmp/device-catalog.jpg");
+    /* background-image: url("../_tmp/device-catalog-overlays.jpg"); */
     background-repeat: no-repeat;
     background-position: -120px 0;
 }

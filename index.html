@@ -71,73 +71,78 @@
 
       <section class="promo">
         <h2 class="visually-hidden">Промо-блок</h2>
-        <ul class="promo-control">
-          <li class="promo-control-item current">
-            <button class="promo-control-btn" type="button">
-              <span class="visually-hidden">Первый слайд</span>
-            </button>
-          </li>
-          <li class="promo-control-item">
-            <button class="promo-control-btn" type="button">
-              <span class="visually-hidden">Второй слайд</span>
-            </button>
-          </li>
-          <li class="promo-control-item">
-            <button class="promo-control-btn" type="button">
-              <span class="visually-hidden">Третий слайд</span>
-            </button>
-          </li>
-        </ul>
-        <ul class="promo-list">
-          <li class="promo-item">
-            <img class="promo-image" src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
-            <p class="promo-lead">Делай селфи, как Бен Стиллер!</p>
-            <p class="desc promo-desc">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <table class="promo-table">
-              <tr class="promo-row">
-                <td class="promo-cell">8,5 м</td>
-                <td class="promo-cell">5 кг</td>
-                <td class="promo-cell">Карбон</td>
-              </tr>
-              <tr class="promo-row">
-                <td class="promo-cell">Длина палки</td>
-                <td class="promo-cell">Вес палки</td>
-                <td class="promo-cell">Материал</td>
-              </tr>
-            </table>
-            <a class="btn follow-btn promo-follow-btn" href="#">Подробнее</a>
-          </li>
-          <li class="promo-item">
-            <img class="promo-image" src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
-            <p class="promo-lead">Худеем правильно!</p>
-            <p class="desc promo-desc">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <table class="promo-table">
-              <tr class="promo-row">
-                <td class="promo-cell">48 часов</td>
-              </tr>
-              <tr class="promo-row">
-                <td class="promo-cell">Без подзарядки</td>
-              </tr>
-            </table>
-            <a class="btn follow-btn promo-follow-btn" href="#">Подробнее</a>
-          </li>
-          <li class="promo-item">
-            <img class="promo-image" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
-            <p class="promo-lead">Порхает как бабочка, жалит как пчела!</p>
-            <p class="desc promo-desc">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <table class="promo-table">
-              <tr class="promo-row">
-                <td class="promo-cell">800 м</td>
-                <td class="promo-cell">50 м</td>
-              </tr>
-              <tr class="promo-row">
-                <td class="promo-cell">Дальность полета</td>
-                <td class="promo-cell">Радиус поражения</td>
-              </tr>
-            </table>
-            <a class="btn follow-btn promo-follow-btn" href="#">Подробнее</a>
-          </li>
-        </ul>
+        <div class="promo-slider">
+          <input class="visually-hidden promo-radio current" type="radio" name="promo-slider" value="promo-slide-1" id="promo-slide-1" checked>
+          <input class="visually-hidden promo-radio current" type="radio" name="promo-slider" value="promo-slide-2" id="promo-slide-2">
+          <input class="visually-hidden promo-radio current" type="radio" name="promo-slider" value="promo-slide-3" id="promo-slide-3">
+          <ul class="promo-control-list">
+            <li class="promo-control-item">
+              <label for="promo-slide-1">
+                <span class="visually-hidden">Первый слайд</span>
+              </label>
+            </li>
+            <li class="promo-control-item">
+              <label for="promo-slide-2">
+                <span class="visually-hidden">Второй слайд</span>
+              </label>
+            </li>
+            <li class="promo-control-item">
+              <label for="promo-slide-3">
+                <span class="visually-hidden">Третий слайд</span>
+              </label>
+            </li>
+          </ul>
+          <ul class="promo-list">
+            <li class="promo-item">
+              <img class="promo-image" src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
+              <p class="promo-lead">Делай селфи, как Бен Стиллер!</p>
+              <p class="desc promo-desc">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <table class="promo-table">
+                <tr class="promo-row">
+                  <td class="promo-cell">8,5 м</td>
+                  <td class="promo-cell">5 кг</td>
+                  <td class="promo-cell">Карбон</td>
+                </tr>
+                <tr class="promo-row">
+                  <td class="promo-cell">Длина палки</td>
+                  <td class="promo-cell">Вес палки</td>
+                  <td class="promo-cell">Материал</td>
+                </tr>
+              </table>
+              <a class="btn follow-btn promo-follow-btn" href="#">Подробнее</a>
+            </li>
+            <li class="promo-item">
+              <img class="promo-image" src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
+              <p class="promo-lead">Худеем правильно!</p>
+              <p class="desc promo-desc">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <table class="promo-table">
+                <tr class="promo-row">
+                  <td class="promo-cell">48 часов</td>
+                </tr>
+                <tr class="promo-row">
+                  <td class="promo-cell">Без подзарядки</td>
+                </tr>
+              </table>
+              <a class="btn follow-btn promo-follow-btn" href="#">Подробнее</a>
+            </li>
+            <li class="promo-item">
+              <img class="promo-image" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
+              <p class="promo-lead">Порхает как бабочка, жалит как пчела!</p>
+              <p class="desc promo-desc">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <table class="promo-table">
+                <tr class="promo-row">
+                  <td class="promo-cell">800 м</td>
+                  <td class="promo-cell">50 м</td>
+                </tr>
+                <tr class="promo-row">
+                  <td class="promo-cell">Дальность полета</td>
+                  <td class="promo-cell">Радиус поражения</td>
+                </tr>
+              </table>
+              <a class="btn follow-btn promo-follow-btn" href="#">Подробнее</a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="popular">
