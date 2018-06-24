@@ -1,0 +1,66 @@
+/* AUXILIARY LAYOUT STYLES */
+
+.main-page,
+.inner-page,
+.main-page *,
+.inner-page * {
+  color: #000000;
+  background-color: transparent;
+}
+
+.main-page {
+    background-image: url("../_tmp/device-index.jpg");
+    background-repeat: no-repeat;
+    background-position: -120px 0;
+}
+
+.inner-page {
+    background-image: url("../_tmp/device-catalog.jpg");
+    background-repeat: no-repeat;
+    background-position: -120px 0;
+}
+
+.header {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+.header * {
+  color: transparent;
+}
+
+.header .logo {
+  outline: 2px solid blue;
+  outline-offset: -2px;
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+.header nav {
+  outline: 2px solid green;
+  outline-offset: -2px;
+  /* background-color: rgba(0, 255, 0, 0.1); */
+}
+
+.header nav form {
+  outline: 2px solid orange;
+  outline-offset: -2px;
+  background-color: rgba(255, 128, 0, 0.1);
+}
+
+.header nav > ul {
+  outline: 2px solid blue;
+  outline-offset: -2px;
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+.header nav > ul > li {
+  outline: 2px solid purple;
+  outline-offset: -2px;
+  background-color: rgba(0, 0, 128, 0.1);
+}
+
+.header nav > ul > .header-catalog > ul > li {
+  outline: 2px solid cyan;
+  outline-offset: -2px;
+  background-color: rgba(0, 128, 128, 0.1);
+}
