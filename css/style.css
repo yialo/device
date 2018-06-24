@@ -271,9 +271,11 @@ a {
 }
 
 .btn {
+  display: block;
+  height: 40px;
   font-weight: 800;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 40px;
   font-family: "Gilroy", sans-serif;
   text-align: center;
   text-transform: uppercase;
@@ -283,10 +285,10 @@ a {
   border-style: none;
 }
 
-.btn:hover,
+/* .btn:hover, !TO DELETE!
 .btn:focus {
   background-color: #f0c52e;
-}
+} */
 
 .follow-btn:active {
   color: rgba(0, 0, 0, 0.3);
@@ -873,26 +875,113 @@ a {
 .promo-radio[id$="1"]:checked ~ .promo-list .promo-item:nth-child(1),
 .promo-radio[id$="2"]:checked ~ .promo-list .promo-item:nth-child(2),
 .promo-radio[id$="3"]:checked ~ .promo-list .promo-item:nth-child(3) {
-  display: block;
+  display: flex;
+  justify-content: space-between;
 }
 
 .promo-image {
   position: relative;
 }
 
-/*
-.promo-image[src$="1"] {
-
+.promo-image[src*="1"] {
+  top: 18px;
+  left: 90px;
 }
 
-.promo-image[src$="2"] {
-
+.promo-image[src*="2"] {
+  top: 30px;
+  left: 116px;
 }
 
-.promo-image[src$="3"] {
-
-} */
+.promo-image[src*="3"] {
+  top: 83px;
+  left: 30px;
+}
 
 .promo-text {
   display: flex;
+  flex-direction: column;
+  width: 560px;
+  padding-top: 51px;
+}
+
+.promo-lead {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.promo-lead::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: -43px;
+  width: 100px;
+  border-top: 7px solid #ffffff;
+}
+
+.promo-lead::after {
+  position: absolute;
+  font-weight: 800;
+  font-size: 179.2px;
+  line-height: 179.2px;
+  font-family: "Gilroy", sans-serif;
+  color: #ffffff;
+  letter-spacing: 1.792px;
+  z-index: -1;
+}
+
+.promo-image[src*="1"] ~ .promo-text .promo-lead::after {
+  content: "01";
+  top: -92px;
+  right: 46px;
+}
+
+.promo-image[src*="2"] ~ .promo-text .promo-lead::after {
+  content: "02";
+  top: -93px;
+  right: 48px;
+}
+
+.promo-image[src*="3"] ~ .promo-text .promo-lead::after {
+  content: "03";
+  top: -92px;
+  right: 48px;
+}
+
+.promo-desc {
+  margin-bottom: 42px;
+}
+
+.promo-table {
+  order: 4;
+}
+
+.promo-follow-btn {
+  order: 3;
+  width: 220px;
+  margin-bottom: 45px;
+}
+
+.follow-btn {
+  position: relative;
+}
+
+.follow-btn::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 16px;
+  left: 0;
+  height: 8px;
+  transform: scale(1);
+  width: inherit;
+  background-color: #f0c52e;
+  z-index: -1;
+}
+
+.follow-btn:hover::before {
+  transform: scaley(5);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
 }
