@@ -78,7 +78,7 @@ a {
   clip: rect(0 0 0 0);
 }
 
-/* HEADER */
+/* Header */
 
 .header {
   background-color: rgba(240, 197, 46, 0.5);
@@ -260,7 +260,7 @@ a {
   opacity: 0.3;
 }
 
-/* MAIN */
+/* Main */
 
 .main-section-title {
   font-weight: 800;
@@ -580,7 +580,7 @@ a {
   opacity: 0.3;
 }
 
-/* FOOTER */
+/* Footer */
 
 .footer {
   color: #ffffff;
@@ -600,7 +600,7 @@ a {
   list-style-type: none;
 }
 
-/* MODAL */
+/* Modal */
 
 .feedback-item-title {
   font-weight: 800;
@@ -665,6 +665,8 @@ a {
 
 /* LAYOUT */
 
+/* Layout-Header */
+
 .html,
 .body {
   min-width: 1200px;
@@ -681,10 +683,14 @@ a {
   box-sizing: border-box;
 }
 
+.inner-page .header {
+  height: 186px;
+}
+
 .header-logo {
   position: absolute;
   left: 60px;
-  top: -18px;
+  top: -29px;
 }
 
 .navigation {
@@ -697,8 +703,8 @@ a {
 }
 
 .search-form {
-  min-width: 440px;
   align-self: flex-start;
+  flex-grow: 1;
   height: 49px;
 }
 
@@ -706,7 +712,7 @@ a {
   align-self: flex-start;
   display: flex;
   width: 280px;
-  height: 49px;
+  height: 49px; /* !TEMPORARY! */
   margin: 0;
   margin-left: auto;
   padding: 0;
@@ -727,7 +733,7 @@ a {
   display: flex;
   justify-content: space-between;
   width: 220px;
-  height: 49px;
+  height: 49px; /* !TEMPORARY! */
   margin: 0;
   padding: 0;
 }
@@ -739,8 +745,62 @@ a {
 }
 
 .site-menu {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   margin: 0;
   margin-top: 47px;
   padding: 0;
+}
+
+.site-menu-item {
+  width: 125px;
+  height: 34px;
+}
+
+.site-menu-item:nth-child(3) {
+  margin-left: 25px;
+}
+
+.site-menu-item:nth-child(4) {
+  margin-left: 100px;
+}
+
+.header-catalog {
+  flex-grow: 1;
+  position: relative;
+}
+
+.header-catalog-menu {
+  display: none;
+}
+
+.header-catalog-title {
+  display: block;
+  width: 220px;
+  height: 36px;
+}
+
+.header-catalog-title:hover + .header-catalog-menu,
+.header-catalog-menu:hover {
+  box-sizing: border-box;
+  position: absolute;
+  left: -60px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 10px 60px 42px;
+  width: 1160px;
+  height: 160px; /* !TEMPORARY! */
+}
+
+.header-catalog-item {
+  width: 200px;
+  height: 36px;
+}
+
+.header-catalog-item:nth-child(5) {
+  margin-bottom: 36px;
 }

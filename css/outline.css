@@ -9,13 +9,13 @@
 }
 
 .main-page {
-    background-image: url("../_tmp/device-index.jpg");
+    background-image: url("../_tmp/device-index-overlays.jpg");
     background-repeat: no-repeat;
     background-position: -120px 0;
 }
 
 .inner-page {
-    background-image: url("../_tmp/device-catalog.jpg");
+    background-image: url("../_tmp/device-catalog-overlays.jpg");
     background-repeat: no-repeat;
     background-position: -120px 0;
 }
@@ -59,8 +59,14 @@
   background-color: rgba(0, 0, 128, 0.1);
 }
 
-.header nav > ul > .header-catalog > ul > li {
+.header nav > ul > .header-catalog > ul {
   outline: 2px solid cyan;
   outline-offset: -2px;
   background-color: rgba(0, 128, 128, 0.1);
+}
+
+.header nav > ul > .header-catalog > ul > li {
+  outline: 2px solid orange;
+  outline-offset: -2px;
+  background-color: rgba(255, 128, 0, 0.1);
 }
