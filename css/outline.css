@@ -9,9 +9,9 @@
 }
 
 .main-page {
-    /* background-image: url("../_tmp/device-index.jpg"); */
+    background-image: url("../_tmp/device-index.jpg");
     /* background-image: url("../_tmp/device-index-slide-2.jpg"); */
-    background-image: url("../_tmp/device-index-slide-3.jpg");
+    /* background-image: url("../_tmp/device-index-slide-3.jpg"); */
     /* background-image: url("../_tmp/device-index-overlays.jpg"); */
     background-repeat: no-repeat;
     background-position: -120px 0;
@@ -110,5 +110,25 @@
 
 .promo-text {
   outline: 2px solid gold;
+  outline-offset: -2px;
+}
+
+.popular {
+  outline: 2px solid blue;
+  outline-offset: -2px;
+}
+
+.popular-item {
+  outline: 2px solid purple;
+  outline-offset: -2px;
+}
+
+.popular-link {
+  outline: 2px solid gold;
+  outline-offset: -2px;
+}
+
+.popular-link::before {
+  outline: 2px solid maroon;
   outline-offset: -2px;
 }

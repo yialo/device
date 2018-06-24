@@ -339,7 +339,7 @@ a {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", sans-serif;
-  letter-spacing: 0.36px;
+  letter-spacing: 0px;
 }
 
 .popular-link:active {
@@ -984,4 +984,68 @@ a {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
+}
+
+.popular {
+  margin: 0 0 100px;
+  padding: 0;
+  min-height: 320px;
+}
+
+.popular-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.popular-item {
+  flex-basis: 170px;
+  padding: 195px 20px 0;
+}
+
+.popular-link {
+  position: relative;
+  display: block;
+  text-align: left;
+}
+
+.popular-link::before {
+  content: "";
+  position: absolute;
+  top: -195px;
+  width: 160px;
+  height: 160px;
+  background-color: rgba(240, 197, 46, 0.5);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.popular-item:nth-child(1) .popular-link::before {
+  background-image: url("../img/popular-1.svg");
+}
+
+.popular-item:nth-child(2) .popular-link::before {
+  background-image: url("../img/popular-2.svg");
+  background-position-y: bottom;
+}
+
+.popular-item:nth-child(3) .popular-link::before {
+  background-image: url("../img/popular-3.svg");
+}
+
+.popular-item:nth-child(4) .popular-link::before {
+  background-image: url("../img/popular-4.svg");
+}
+
+.popular-item:nth-child(5) .popular-link::before {
+  background-image: url("../img/popular-5.svg");
+}
+
+.popular-item:nth-child(6) .popular-link::before {
+  background-image: url("../img/popular-6.svg");
+}
+
+.popular-link:hover::before {
+    background-color: rgba(240, 197, 46, 1);
 }
