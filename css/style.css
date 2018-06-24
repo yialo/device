@@ -380,6 +380,10 @@ a {
   letter-spacing: 3.2px;
 }
 
+.filter-group {
+  border-style: none;
+}
+
 .filter-group-title {
   font-weight: 800;
   font-size: 18px;
@@ -564,8 +568,6 @@ a {
 .feedback-field {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 100px;
-  height: 20px;
 
   font-weight: 400;
   font-size: 14px;
