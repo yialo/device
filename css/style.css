@@ -689,17 +689,58 @@ a {
 
 .navigation {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
   height: 280px; /* !TEMPORARY! */
   margin: 0;
-  padding: 0;
+  padding: 0 60px;
 }
 
 .search-form {
   min-width: 440px;
+  align-self: flex-start;
+  height: 49px;
 }
 
 .auth-menu {
+  align-self: flex-start;
+  display: flex;
+  width: 280px;
+  height: 49px;
   margin: 0;
+  margin-left: auto;
+  padding: 0;
+}
+
+.auth-item {
+  width: 160px;
+  margin: 0;
+  padding: 0;
+}
+
+.auth-item:nth-child(2) {
+  width: 100px;
+}
+
+.shopping-menu {
+  align-self: flex-start;
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  height: 49px;
+  margin: 0;
+  padding: 0;
+}
+
+.shopping-item {
+  width: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.site-menu {
+  width: 100%;
+  margin: 0;
+  margin-top: 47px;
   padding: 0;
 }
