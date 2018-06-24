@@ -89,3 +89,15 @@
   outline-offset: -2px;
   background-color: rgba(0, 0, 255, 0.1);
 }
+
+.promo-list {
+  outline: 2px solid orange;
+  outline-offset: -2px;
+  background-color: rgba(255, 128, 0, 0.1);
+}
+
+.promo-item {
+  outline: 2px solid purple;
+  outline-offset: -2px;
+  background-color: rgba(0, 0, 128, 0.1);
+}

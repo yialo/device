@@ -818,28 +818,22 @@ a {
   box-sizing: border-box;
   position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
   width: 1200px;
   height: 481px;
-}
-
-.promo-slider {
-  margin: 0;
-  padding: 0;
 }
 
 .promo-control {
   width: 80px;
   height: 12px;
-  align-self: flex-end;
-  margin: 216px 102px 253px 0;
+  margin: 216px -8px 253px 0;
   padding: 0;
   display: flex;
+  z-index: 2;
   justify-content: space-between;
 }
 
 .promo-control-item {
-  vertical-align: top;
   cursor: pointer;
   width: 12px;
   height: 12px;
@@ -860,12 +854,45 @@ a {
 
 .promo-list {
   position: relative;
-  margin: 0;
-  padding: 0;;
+  width: 20px;
+  height: 20px;
+  margin: 0 0 0 90px;
+  padding: 0;
 }
 
 .promo-item {
   position: absolute;
   display: none;
+  width: 1160px;
+  height: 530px;
+  top: -129px;
   z-index: 1;
+  left: -1160px;
+}
+
+.promo-radio[id$="1"]:checked ~ .promo-list .promo-item:nth-child(1),
+.promo-radio[id$="2"]:checked ~ .promo-list .promo-item:nth-child(2),
+.promo-radio[id$="3"]:checked ~ .promo-list .promo-item:nth-child(3) {
+  display: block;
+}
+
+.promo-image {
+  position: relative;
+}
+
+/*
+.promo-image[src$="1"] {
+
+}
+
+.promo-image[src$="2"] {
+
+}
+
+.promo-image[src$="3"] {
+
+} */
+
+.promo-text {
+  display: flex;
 }
