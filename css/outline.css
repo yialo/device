@@ -9,9 +9,9 @@
 }
 
 .main-page {
-    background-image: url("../_tmp/device-index.jpg");
-    /* background-image: url("../_tmp/device-index-slide-2.jpg"); */
-    /* background-image: url("../_tmp/device-index-slide-3.jpg"); */
+    background-image: url("../_tmp/device-index-slides-1.jpg");
+    /* background-image: url("../_tmp/device-index-slides-2.jpg"); */
+    /* background-image: url("../_tmp/device-index-slides-3.jpg"); */
     /* background-image: url("../_tmp/device-index-overlays.jpg"); */
     background-repeat: no-repeat;
     background-position: -120px 0;
@@ -83,7 +83,7 @@
 .promo {
   outline: 2px solid green;
   outline-offset: -2px;
-  /* background-color: rgba(0, 255, 0, 0.1); */
+  background-color: rgba(0, 255, 0, 0.1);
 }
 
 .promo-control {
@@ -135,9 +135,33 @@
 .services {
   outline: 2px solid blue;
   outline-offset: -2px;
+  background-color: rgba(0, 0, 255, 0.1);
 }
 
 .services-control {
   outline: 2px solid green;
   outline-offset: -2px;
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+.services-item {
+  outline: 2px solid purple;
+  outline-offset: -2px;
+}
+
+.services-item::before {
+  outline: 2px solid maroon;
+  outline-offset: -2px;
+}
+
+.brands {
+  outline: 2px solid blue;
+  outline-offset: -2px;
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+.brands-item {
+  outline: 2px solid green;
+  outline-offset: -2px;
+  background-color: rgba(0, 255, 0, 0.1);
 }
