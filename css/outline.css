@@ -133,6 +133,11 @@
   outline-offset: -2px;
 }
 .services {
+  outline: 2px solid blue;
+  outline-offset: -2px;
+}
+
+.services-control {
   outline: 2px solid green;
   outline-offset: -2px;
 }
