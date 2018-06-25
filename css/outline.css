@@ -165,3 +165,23 @@
   outline-offset: -2px;
   background-color: rgba(0, 255, 0, 0.1);
 }
+
+.reference {
+  outline: 2px solid blue;
+  outline-offset: -2px;
+}
+
+.reference-follow-btn {
+  outline: 2px solid purple;
+  outline-offset: -2px;
+}
+
+.footer {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+.modal {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}

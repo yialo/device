@@ -382,10 +382,6 @@ a {
   letter-spacing: 0;
 }
 
-/* .partners-list {
-  list-style-type: none;
-} */
-
 .partners-item {
   font-weight: 800;
   font-size: 16px;
@@ -688,7 +684,6 @@ a {
 .html,
 .body {
   min-width: 1200px;
-  min-height: 2795px; /* !TEMPORARY! */
 }
 
 /* Layout-Header */
@@ -697,6 +692,7 @@ a {
   position: relative;
 
   box-sizing: border-box;
+  width: 1200px;
   width: 1200px;
   margin: 0;
   padding-top: 40px;
@@ -710,26 +706,28 @@ a {
 
 .navigation {
   display: flex;
+  flex-shrink: 0;
   flex-wrap: wrap;
   align-content: flex-start;
   box-sizing: border-box;
-  height: 299px; /* !TEMPORARY! */
+  min-height: 299px;
   margin: 0 20px;
   padding: 19px 60px 0;
 }
 
 .inner-page .navigation {
-  height: 186px;
+  min-height: 186px;
 }
 
 .search-form {
-  flex-grow: 1;
   align-self: flex-start;
+  width: 440px;
   height: 49px;
 }
 
 .auth-menu {
   display: flex;
+  flex-shrink: 0;
   align-self: flex-start;
   width: 280px;
   height: 49px; /* !TEMPORARY! */
@@ -750,6 +748,7 @@ a {
 
 .shopping-menu {
   display: flex;
+  flex-shrink: 0;
   justify-content: space-between;
   align-self: flex-start;
   width: 220px;
@@ -766,6 +765,7 @@ a {
 
 .site-menu {
   display: flex;
+  flex-shrink: 0;
   justify-content: space-between;
   width: 100%;
   height: 34px;
@@ -789,7 +789,7 @@ a {
 .header-catalog {
   position: relative;
 
-  flex-grow: 1;
+  width: 540px;
 }
 
 .header-catalog-menu {
@@ -810,12 +810,13 @@ a {
   z-index: 2;
 
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: flex-start;
   box-sizing: border-box;
   width: 1160px;
-  height: 160px; /* !TEMPORARY! */
+  height: 160px;
   margin: 0;
   padding: 10px 60px 42px;
 }
@@ -833,7 +834,6 @@ a {
 
 .container {
   box-sizing: border-box;
-  width: 1200px;
   margin: 0;
   padding: 0;
 }
@@ -894,14 +894,14 @@ a {
 .promo-list {
   position: relative;
 
-  margin: 20px;
+  margin: 0;
   padding: 0;
 }
 
 .promo-item {
   position: absolute;
-  top: -149px;
-  left: -1160px;
+  top: -129px;
+  left: -1180px;
   z-index: 1;
 
   display: none;
@@ -923,16 +923,25 @@ a {
 .promo-image[src*="1"] {
   top: 18px;
   left: 90px;
+
+  width: 384px;
+  height: 486px;
 }
 
 .promo-image[src*="2"] {
   top: 30px;
   left: 116px;
+
+  width: 345px;
+  height: 485px;
 }
 
 .promo-image[src*="3"] {
   top: 83px;
   left: 30px;
+
+  width: 526px;
+  height: 334px;
 }
 
 .promo-text {
@@ -1005,6 +1014,7 @@ a {
 }
 
 .popular {
+  width: 1200px;
   min-height: 238px;
   margin: 0 0 179px;
   padding: 0;
@@ -1076,6 +1086,7 @@ a {
 .services {
   position: relative;
 
+  width: 1200px;
   min-height: 288px;
   margin: 0 0 95px;
   padding: 0;
@@ -1118,9 +1129,8 @@ a {
 }
 
 .services-list {
-  width: 1200px;
   min-height: 288px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -1189,7 +1199,7 @@ a {
 .brands {
   width: 1200px;
   min-height: 100px;
-  margin: 0 0 93px;
+  margin: 0 0 92px;
   padding: 0;
 }
 
@@ -1209,4 +1219,85 @@ a {
 .brands-image {
   width: 260px;
   height: 100px;
+}
+
+.reference {
+  display: flex;
+  width: 1200px;
+  min-height: 655px;
+  margin: 0;
+}
+
+.reference-item {
+  width: 600px;
+  margin: 0;
+  padding: 55px 20px 0;
+}
+
+.reference-item-title {
+  margin: 0;
+  margin-bottom: 41px;
+  padding: 0;
+}
+
+.reference-desc {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  width: 460px;
+}
+
+.reference-item:last-of-type .reference-desc {
+  width: 520px;
+}
+
+.partners-list {
+  margin: 0;
+  margin-top: 65px;
+  padding: 0;
+  padding-left: 35px;
+
+  list-style-type: none;
+}
+
+.partners-item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.partners-item::before {
+  content: "";
+  position: absolute;
+  bottom: 16px;
+  left: -34px;
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.map-image {
+  width: 560px;
+  height: 222px;
+}
+
+.footer {
+  display: flex;
+  width: 1200px;
+  min-height: 323px;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-feedback {
+  display: flex;
+  width: 960px;
+  height: 553px;
+}
+
+.modal-map {
+  width: 960px;
+  height: 559px;
 }
