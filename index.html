@@ -5,7 +5,7 @@
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/outline.css">
+    <!-- <link rel="stylesheet" href="css/outline.css"> -->
   </head>
   <body class="main-page">
     <header class="header">
@@ -69,10 +69,11 @@
     <main class="container">
       <h1 class="visually-hidden">Магазин цифровой техники «Девайс»</h1>
 
-      <div class="promo">
-        <input class="visually-hidden promo-radio current" type="radio" name="promo-slider" value="promo-slide-1" id="promo-slide-1" checked>
-        <input class="visually-hidden promo-radio current" type="radio" name="promo-slider" value="promo-slide-2" id="promo-slide-2">
-        <input class="visually-hidden promo-radio current" type="radio" name="promo-slider" value="promo-slide-3" id="promo-slide-3">
+      <section class="promo">
+        <h2 class="visually-hidden">Промо-блок</h2>
+        <input class="visually-hidden promo-radio" type="radio" name="promo-slider" value="promo-slide-1" id="promo-slide-1" checked>
+        <input class="visually-hidden promo-radio" type="radio" name="promo-slider" value="promo-slide-2" id="promo-slide-2">
+        <input class="visually-hidden promo-radio" type="radio" name="promo-slider" value="promo-slide-3" id="promo-slide-3">
         <div class="promo-control">
           <label class="promo-control-item" for="promo-slide-1">
             <span class="visually-hidden">Первый слайд</span>
@@ -140,7 +141,7 @@
             </div>
           </li>
         </ul>
-      </div>
+      </section>
 
       <section class="popular">
         <h2 class="visually-hidden">Популярные товары</h2>
@@ -168,17 +169,14 @@
 
       <section class="services">
         <h2 class="visually-hidden">Сервис</h2>
-        <ul class="services-control">
-          <li class="serveices-control-item current">
-            <button class="btn services-btn" type="button">Доставка</button>
-          </li>
-          <li class="serveices-control-item">
-            <button class="btn services-btn" type="button">Гарантия</button>
-          </li>
-          <li class="serveices-control-item">
-            <button class="btn services-btn" type="button">Кредит</button>
-          </li>
-        </ul>
+        <input class="visually-hidden services-radio" type="radio" name="services-slider" value="services-slide-1" id="services-slide-1" checked>
+        <input class="visually-hidden services-radio current" type="radio" name="services-slider" value="services-slide-2" id="services-slide-2">
+        <input class="visually-hidden services-radio current" type="radio" name="services-slider" value="services-slide-3" id="services-slide-3">
+        <div class="services-control">
+          <label class="btn services-btn" for="serveices-slide-1">Доставка</label>
+          <label class="btn services-btn" for="serveices-slide-2">Гарантия</label>
+          <label class="btn services-btn" for="serveices-slide-3">Кредит</label>
+        </div>
         <ul class="services-list">
           <li class="services-item">
             <h3 class="services-item-title main-section-title">Доставка</h3>
