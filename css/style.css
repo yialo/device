@@ -1244,11 +1244,6 @@ a {
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
-  width: 460px;
-}
-
-.reference-item:last-of-type .reference-desc {
-  width: 520px;
 }
 
 .partners-list {
@@ -1283,12 +1278,25 @@ a {
   height: 222px;
 }
 
+.reference-follow-btn {
+  margin-top: 54px;
+  width: 260px;
+}
+
+.reference-item:last-of-type .reference-follow-btn {
+  margin-top: 68px;
+}
+
 .footer {
   display: flex;
   width: 1200px;
   min-height: 323px;
   margin: 0;
   padding: 0;
+}
+
+.footer .site-menu {
+  width: 500px;
 }
 
 .modal-feedback {
