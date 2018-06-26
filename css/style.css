@@ -1347,7 +1347,6 @@ a {
 }
 
 .footer {
-  width: 1200px;
   min-width: 1200px;
   margin: 0;
   padding: 0;
@@ -1385,25 +1384,34 @@ a {
 }
 
 .footer-auth-menu {
-  width: 130px;
-  margin-left: auto;
+  width: 225px;
+  min-height: 30px;
+  margin: 0;
+  margin-left: 683px;
+  margin-bottom: 40px;
+  padding: 0;
 }
 
 .footer-shopping-menu {
-  width: 220px;
-  margin-right: 0;
+  width: 212px;
+  min-height: 30px;
+  margin: 0;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  padding: 0;
 }
 
 .footer-site-menu {
   width: 440px;
   height: 30px;
-  margin: 20px 150px 0;
+  margin: 0 130px 60px;
 }
 
 .footer-details {
   width: 210px;
   height: 30px;
-  margin: 20px 0 0;
+  margin: 0;
+  margin-bottom: 60px;
   padding: 0;
 }
 
@@ -1415,7 +1423,7 @@ a {
   box-sizing: border-box;
   width: 160px;
   height: 40px;
-  margin: 60px 473px 0 500px;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -1450,9 +1458,12 @@ a {
 }
 
 .copyright {
+  position: absolute;
+  right: 20px;
+  bottom: 57px;
+
   display: block;
   margin: 0;
-  margin-top: 60px;
   padding: 0;
 }
 
