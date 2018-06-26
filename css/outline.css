@@ -176,8 +176,18 @@
   outline-offset: -2px;
 }
 
-.footer {
+.footer-wrapper {
   outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+.footer-wrapper > *:not(.logo) {
+  outline: 2px solid blue;
+  outline-offset: -2px;
+}
+
+.social-link {
+  outline: 2px solid gold;
   outline-offset: -2px;
 }
 

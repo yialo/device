@@ -87,7 +87,7 @@ a {
   line-height: 48px;
   font-family: "Gilroy", sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.48px;
+  letter-spacing: 0;
 }
 
 .inner-page .logo:hover,
@@ -692,8 +692,7 @@ a {
   position: relative;
 
   box-sizing: border-box;
-  width: 1200px;
-  width: 1200px;
+  min-width: 1200px;
   margin: 0;
   padding-top: 40px;
 }
@@ -710,6 +709,7 @@ a {
   flex-wrap: wrap;
   align-content: flex-start;
   box-sizing: border-box;
+  width: 1160px;
   min-height: 299px;
   margin: 0 20px;
   padding: 19px 60px 0;
@@ -834,6 +834,7 @@ a {
 
 .container {
   box-sizing: border-box;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
 }
@@ -882,13 +883,6 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 12px 12px;
-}
-
-.promo-radio[id$="1"]:focus ~ .promo-control .promo-control-item[for$="1"],
-.promo-radio[id$="2"]:focus ~ .promo-control .promo-control-item[for$="2"],
-.promo-radio[id$="3"]:focus ~ .promo-control .promo-control-item[for$="3"] {
-  box-shadow: 0 0 1px 2px #ffffff,
-  0 0 1px 3px #4d90fe;
 }
 
 .promo-list {
@@ -1235,9 +1229,22 @@ a {
 }
 
 .reference-item-title {
+  position: relative;
+
   margin: 0;
   margin-bottom: 41px;
   padding: 0;
+}
+
+.reference-item-title::before {
+  content: "";
+  position: absolute;
+  top: -55px;
+
+  box-sizing: border-box;
+  width: 80px;
+
+  border-top: 7px solid #000000;
 }
 
 .reference-desc {
@@ -1257,6 +1264,7 @@ a {
 
 .partners-item {
   position: relative;
+
   margin: 0;
   padding: 0;
 }
@@ -1266,11 +1274,13 @@ a {
   position: absolute;
   bottom: 16px;
   left: -34px;
+
   box-sizing: border-box;
-  border: 2px solid #e5e5e5;
-  border-radius: 50%;
   width: 8px;
   height: 8px;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
 }
 
 .map-image {
@@ -1279,8 +1289,8 @@ a {
 }
 
 .reference-follow-btn {
-  margin-top: 54px;
   width: 260px;
+  margin-top: 54px;
 }
 
 .reference-item:last-of-type .reference-follow-btn {
@@ -1288,15 +1298,111 @@ a {
 }
 
 .footer {
-  display: flex;
   width: 1200px;
-  min-height: 323px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
 }
 
+.footer-wrapper {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  box-sizing: border-box;
+  width: 1200px;
+  min-height: 323px;
+  margin: 0;
+  padding: 60px 20px 0;
+}
+
+.footer-wrapper::before {
+  content: "";
+  position: absolute;
+  bottom: 79px;
+
+  box-sizing: border-box;
+  width: 80px;
+
+  border-top: 7px solid #ffc600;
+}
+
+.footer-logo {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+}
+
+.footer .auth-menu {
+  width: 130px;
+  margin-left: 810px;
+}
+
+.footer .shopping-menu {
+  width: 220px;
+  margin-right: 0;
+}
+
 .footer .site-menu {
-  width: 500px;
+  width: 440px;
+  height: 30px;
+  margin: 20px 150px 0;
+}
+
+.footer-details {
+  width: 210px;
+  height: 30px;
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  width: 160px;
+  height: 40px;
+  margin: 60px 473px 0 500px;
+  padding: 0;
+}
+
+.social-link {
+  display: block;
+  width: 32px;
+  height: 32px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-link-facebook {
+  background-image: Url("../img/fb.svg");
+}
+
+.social-link-instagram {
+  background-image: Url("../img/instagram.svg");
+}
+
+.social-link-twitter {
+  background-image: Url("../img/twitter.svg");
+}
+
+.copyright {
+  display: block;
+  margin: 0;
+  margin-top: 60px;
+  padding: 0;
+}
+
+.copyright-icon {
+  width: 27px;
+  height: 35px;
+}
+
+.modal {
+  position: relative;
 }
 
 .modal-feedback {
@@ -1305,7 +1411,43 @@ a {
   height: 553px;
 }
 
+
+
+
+
+.feedback-btn {
+  width: 200px;
+}
+
 .modal-map {
   width: 960px;
   height: 559px;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 55px;
+  height: 55px;
+
+  background-color: transparent;
+  background-image: url("../img/modal-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-style: none;
+  outline: 0;
+  transform: rotate(0);
+  cursor: pointer;
+  opacity: 0.5;
+
+  transition-timing-function: ease;
+  transition-duration: 0.25s;
+  transition-property: transform, opacity;
+}
+
+.modal-close-btn:hover {
+  transform: rotate(45deg);
+  opacity: 1;
 }
