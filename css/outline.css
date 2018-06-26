@@ -191,7 +191,12 @@
   outline-offset: -2px;
 }
 
-.modal {
-  outline: 2px solid red;
+.feedback-form {
+  outline: 2px solid blue;
+  outline-offset: -2px;
+}
+
+.feedback-form > * {
+  outline: 2px solid green;
   outline-offset: -2px;
 }

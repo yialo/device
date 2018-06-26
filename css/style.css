@@ -1372,6 +1372,7 @@ a {
   display: block;
   width: 32px;
   height: 32px;
+  opacity: 0.3;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -1389,6 +1390,14 @@ a {
   background-image: Url("../img/twitter.svg");
 }
 
+.social-link:hover {
+  opacity: 0.6;
+}
+
+.social-link:active {
+  opacity: 0.1;
+}
+
 .copyright {
   display: block;
   margin: 0;
@@ -1403,17 +1412,53 @@ a {
 
 .modal {
   position: relative;
+  margin: 40px 20px;
+  box-shadow: 0 7px 20px 3px rgba(0, 0, 0, 0.2);
 }
 
 .modal-feedback {
-  display: flex;
+  box-sizing: border-box;
   width: 960px;
-  height: 553px;
+  min-height: 553px;
+  padding: 100px;
 }
 
+.feedback-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
 
+.feedback-input {
+  width: 360px;
+}
 
+.feedback-textarea {
+  width: 760px;
+}
 
+.feedback-item-title {
+  margin: 0;
+  padding: 0;
+}
+
+.feedback-field {
+  margin: 0;
+  padding: 0;
+}
+
+.feedback-field[type="text"],
+.feedback-field[type="email"] {
+  width: 360px;
+  height: 50px;
+}
+
+.feedback-item textarea.feedback-field {
+  width: 760px;
+  height: 156px;
+}
 
 .feedback-btn {
   width: 200px;
@@ -1421,7 +1466,7 @@ a {
 
 .modal-map {
   width: 960px;
-  height: 559px;
+  min-height: 559px;
 }
 
 .modal-close-btn {
