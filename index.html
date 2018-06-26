@@ -5,7 +5,7 @@
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/outline.css"> -->
+    <link rel="stylesheet" href="css/outline.css">
   </head>
   <body class="main-page">
     <header class="header">
@@ -16,12 +16,12 @@
           <input class="search-field" type="search" name="search" id="search" placeholder="Поиск по сайту">
           <button class="search-btn" type="submit">Найти</button>
         </form>
-        <ul class="auth-menu">
+        <ul class="auth-menu header-auth-menu">
           <li class="auth-item">
             <a class="auth-link" href="#">Войти</a>
           </li>
         </ul>
-        <ul class="shopping-menu">
+        <ul class="shopping-menu header-shopping-menu">
           <li class="shopping-item">
             <a class="shopping-link" href="#">Сравнить</a>
           </li>
@@ -29,7 +29,7 @@
             <a class="shopping-link" href="#">Корзина</a>
           </li>
         </ul>
-        <ul class="site-menu">
+        <ul class="site-menu header-site-menu">
           <li class="site-menu-item header-catalog">
             <a class="site-menu-link header-catalog-title" href="catalog.html">Каталог товаров</a>
             <ul class="header-catalog-menu">
@@ -71,20 +71,9 @@
 
       <section class="promo">
         <h2 class="visually-hidden">Промо-блок</h2>
-        <input class="visually-hidden promo-radio" type="radio" name="promo-slider" value="promo-slide-1" id="promo-slide-1" checked>
-        <input class="visually-hidden promo-radio" type="radio" name="promo-slider" value="promo-slide-2" id="promo-slide-2">
-        <input class="visually-hidden promo-radio" type="radio" name="promo-slider" value="promo-slide-3" id="promo-slide-3">
-        <div class="promo-control">
-          <label class="promo-control-item" for="promo-slide-1">
-            <span class="visually-hidden">Первый слайд</span>
-          </label>
-          <label class="promo-control-item" for="promo-slide-2">
-            <span class="visually-hidden">Второй слайд</span>
-          </label>
-          <label class="promo-control-item" for="promo-slide-3">
-            <span class="visually-hidden">Третий слайд</span>
-          </label>
-        </div>
+        <input class="visually-hidden promo-radio" type="radio" name="promo-slider" value="promo-slide-1" id="promo-slide-1" tabindex="-1" checked>
+        <input class="visually-hidden promo-radio" type="radio" name="promo-slider" value="promo-slide-2" id="promo-slide-2" tabindex="-1">
+        <input class="visually-hidden promo-radio" type="radio" name="promo-slider" value="promo-slide-3" id="promo-slide-3" tabindex="-1">
         <ul class="promo-list">
           <li class="promo-item">
             <img class="promo-image" src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
@@ -141,6 +130,17 @@
             </div>
           </li>
         </ul>
+        <div class="promo-control">
+          <label class="promo-control-item" for="promo-slide-1">
+            <span class="visually-hidden">Первый слайд</span>
+          </label>
+          <label class="promo-control-item" for="promo-slide-2">
+            <span class="visually-hidden">Второй слайд</span>
+          </label>
+          <label class="promo-control-item" for="promo-slide-3">
+            <span class="visually-hidden">Третий слайд</span>
+          </label>
+        </div>
       </section>
 
       <section class="popular">
@@ -169,9 +169,9 @@
 
       <section class="services">
         <h2 class="visually-hidden">Сервис</h2>
-        <input class="visually-hidden services-radio" type="radio" name="services-slider" value="services-slide-1" id="services-slide-1" checked>
-        <input class="visually-hidden services-radio current" type="radio" name="services-slider" value="services-slide-2" id="services-slide-2">
-        <input class="visually-hidden services-radio current" type="radio" name="services-slider" value="services-slide-3" id="services-slide-3">
+        <input class="visually-hidden services-radio" type="radio" name="services-slider" value="services-slide-1" id="services-slide-1" tabindex="-1" checked>
+        <input class="visually-hidden services-radio current" type="radio" name="services-slider" value="services-slide-2" id="services-slide-2" tabindex="-1">
+        <input class="visually-hidden services-radio current" type="radio" name="services-slider" value="services-slide-3" id="services-slide-3" tabindex="-1">
         <div class="services-control">
           <label class="btn services-btn" for="services-slide-1">Доставка</label>
           <label class="btn services-btn" for="services-slide-2">Гарантия</label>
@@ -215,8 +215,8 @@
         <h2 class="visually-hidden">Справочная информация</h2>
         <div class="reference-item">
           <h3 class="reference-item-title main-section-title">О нас</h3>
-          <p class="desc reference-desc">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p class="desc reference-desc">Мы можем доставить ваш товар в самые отдаленные точки России! <span class="uppercase-caption">Device</span> работает со многими транспортными компаниями:</p>
+          <p class="desc reference-desc">Огромный выбор гаджетов не оставит равнодушным гика, <br>который есть в каждом из нас.</p>
+          <p class="desc reference-desc">Мы можем доставить ваш товар в самые отдаленные точки<br> России! <span class="uppercase-caption">Device</span> работает со многими транспортными компаниями:</p>
           <ul class="partners-list">
             <li class="partners-item">Деловые Линии</li>
             <li class="partners-item">Автотрейдинг</li>
@@ -238,12 +238,12 @@
     <footer class="footer">
       <div class="footer-wrapper">
         <a class="logo footer-logo disabled">Device</a>
-        <ul class="auth-menu">
+        <ul class="auth-menu footer-auth-menu">
           <li class="auth-item">
             <a class="auth-link" href="#">Войти</a>
           </li>
         </ul>
-        <ul class="shopping-menu">
+        <ul class="shopping-menu footer-shopping-menu">
           <li class="shopping-item">
             <a class="shopping-link" href="#">Сравнить</a>
           </li>
@@ -252,7 +252,7 @@
           </li>
         </ul>
         <p class="footer-details">г. Москва, ул. Строителей, 15</p>
-        <ul class="site-menu">
+        <ul class="site-menu footer-site-menu">
           <li class="site-menu-item">
             <a class="site-menu-link" href="#">Доставка</a>
           </li>
