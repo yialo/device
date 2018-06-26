@@ -3,9 +3,13 @@
 .main-page,
 .inner-page,
 .main-page *,
-.inner-page * {
-  color: #000000;
-  background-color: transparent;
+.main-page *::before,
+.main-page *::after,
+.inner-page *,
+.inner-page *::before,
+.inner-page *::after {
+  color: #000000 !important;
+  background-color: transparent !important;
 }
 
 .main-page {
@@ -36,43 +40,36 @@
 .header .logo {
   outline: 2px solid blue;
   outline-offset: -2px;
-  background-color: rgba(0, 0, 255, 0.1);
 }
 
 .header nav {
   outline: 2px solid green;
   outline-offset: -2px;
-  background-color: rgba(0, 255, 0, 0.1);
 }
 
 .header nav form {
   outline: 2px solid orange;
   outline-offset: -2px;
-  background-color: rgba(255, 128, 0, 0.1);
 }
 
 .header nav > ul {
   outline: 2px solid blue;
   outline-offset: -2px;
-  background-color: rgba(0, 0, 255, 0.1);
 }
 
 .header nav > ul > li {
   outline: 2px solid purple;
   outline-offset: -2px;
-  background-color: rgba(0, 0, 128, 0.1);
 }
 
 .header nav > ul > .header-catalog > ul {
   outline: 2px solid cyan;
   outline-offset: -2px;
-  background-color: rgba(0, 128, 128, 0.1);
 }
 
 .header nav > ul > .header-catalog > ul > li {
   outline: 2px solid orange;
   outline-offset: -2px;
-  background-color: rgba(255, 128, 0, 0.1);
 }
 
 .container {
@@ -83,19 +80,16 @@
 .promo {
   outline: 2px solid green;
   outline-offset: -2px;
-  background-color: rgba(0, 255, 0, 0.1);
 }
 
 .promo-control {
   outline: 2px solid blue;
   outline-offset: -2px;
-  background-color: rgba(0, 0, 255, 0.1);
 }
 
 .promo-list {
   outline: 2px solid orange;
   outline-offset: -2px;
-  background-color: rgba(255, 128, 0, 0.1);
 }
 
 .promo-item {
@@ -136,13 +130,16 @@
 .services {
   outline: 2px solid blue;
   outline-offset: -2px;
-  background-color: rgba(0, 0, 255, 0.1);
 }
 
 .services-control {
   outline: 2px solid green;
   outline-offset: -2px;
-  background-color: rgba(0, 255, 0, 0.1);
+}
+
+.services-list {
+  outline: 2px solid orange;
+  outline-offset: -2px;
 }
 
 .services-item {
@@ -158,13 +155,11 @@
 .brands {
   outline: 2px solid blue;
   outline-offset: -2px;
-  background-color: rgba(0, 0, 255, 0.1);
 }
 
 .brands-item {
   outline: 2px solid green;
   outline-offset: -2px;
-  background-color: rgba(0, 255, 0, 0.1);
 }
 
 .reference {

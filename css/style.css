@@ -718,12 +718,14 @@ a {
 .main-page .navigation::after {
   content: "";
   position: absolute;
-  width: 1160px;
-  height: 113px;
-  background-color: #f7e296;
   bottom: -113px;
   left: 20px;
   z-index: -2;
+
+  width: 1160px;
+  height: 113px;
+
+  background-color: #f7e296;
 }
 
 .search-form {
@@ -800,6 +802,7 @@ a {
 
 .site-menu-item:nth-child(4) {
   position: relative;
+
   margin-left: 100px;
 }
 
@@ -874,8 +877,8 @@ a {
   box-sizing: border-box;
   width: 1160px;
   min-height: 582px;
-  padding: 20px 0;
   margin: 0;
+  padding: 20px 0;
 }
 
 .promo-radio[id$="1"]:checked ~ .promo-list .promo-item:nth-child(1),
@@ -888,6 +891,7 @@ a {
 
 .promo-image {
   position: relative;
+
   margin: 0;
   padding: 0;
 }
@@ -901,7 +905,7 @@ a {
 }
 
 .promo-image[src*="2"] {
-  top: 30px;
+  top: -6px;
   left: 116px;
 
   width: 345px;
@@ -909,7 +913,7 @@ a {
 }
 
 .promo-image[src*="3"] {
-  top: 83px;
+  top: 47px;
   left: 30px;
 
   width: 526px;
@@ -926,6 +930,7 @@ a {
 
 .promo-lead {
   position: relative;
+
   margin: 62px 0 18px;
   padding: 0;
 }
@@ -990,8 +995,8 @@ a {
 
 .promo-control {
   position: relative;
-  left: 998px;
   bottom: 253px;
+  left: 998px;
   z-index: 2;
 
   display: flex;
@@ -1095,27 +1100,52 @@ a {
 }
 
 .services {
-  position: relative;
-
-  width: 1200px;
-  min-height: 288px;
   margin: 0 0 95px;
   padding: 0;
 }
 
+.services-wrapper {
+  display: flex;
+  align-items: flex-start;
+  width: 1200px;
+}
+
 .services-control {
-  position: absolute;
-  top: -100px;
+  position: relative;
+  top: -20px;
   left: 20px;
   z-index: 1;
 
   box-sizing: border-box;
   width: 284px;
-  height: 319px;
+  min-height: 169px;
   margin: 0;
-  padding-top: 80px;
+  padding: 0;
 
   border-right: 7px solid #000000;
+}
+
+.services-control::before,
+.services-control::after {
+  content: "";
+  position: absolute;
+
+  width: 7px;
+
+  background-color: #000000;
+}
+
+.services-control::before {
+  top: -80px;
+  right: -7px;
+
+  height: 80px;
+}
+
+.services-control::after {
+  right: -7px;
+
+  height: 70px;
 }
 
 .services-btn {
@@ -1141,15 +1171,14 @@ a {
 
 .services-list {
   min-height: 288px;
-  margin: 0 auto;
+  margin: 0;
+  margin-left: 136px;
   padding: 0;
 }
 
 .services-item {
   position: relative;
   top: -26px;
-  right: 100px;
-  left: 420px;
 
   display: none;
   width: 460px;
