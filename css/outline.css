@@ -28,15 +28,6 @@
     background-position: -120px 0;
 }
 
-.header {
-  outline: 2px solid red;
-  outline-offset: -2px;
-}
-
-.header * {
-  color: transparent;
-}
-
 .header .logo {
   outline: 2px solid blue;
   outline-offset: -2px;
@@ -194,5 +185,40 @@
 
 .feedback-form > * {
   outline: 2px solid green;
+  outline-offset: -2px;
+}
+
+.page-title {
+  outline: 2px solid blue;
+  outline-offset: -2px;
+}
+
+.breadcrumbs-list {
+  outline: 2px solid purple;
+  outline-offset: -2px;
+}
+
+.breadcrumbs-item {
+  outline: 2px solid green;
+  outline-offset: -2px;
+}
+
+.filter {
+  outline: 2px solid green;
+  outline-offset: -2px;
+}
+
+.sorting-wrapper {
+  outline: 2px solid gold;
+  outline-offset: -2px;
+}
+
+.catalog {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+.pagination {
+  outline: 2px solid orange;
   outline-offset: -2px;
 }
