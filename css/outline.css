@@ -217,3 +217,8 @@
   outline: 2px solid orange;
   outline-offset: -2px;
 }
+
+.copyright {
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
