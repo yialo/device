@@ -698,8 +698,7 @@ a {
 
   display: flex;
   flex-shrink: 0;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  flex-direction: column;
   box-sizing: border-box;
   width: 1160px;
   min-height: 186px;
@@ -707,8 +706,11 @@ a {
   padding: 19px 60px 0;
 }
 
-.header-logo {
+.logo {
   position: absolute;
+}
+
+.header-logo {
   top: -24px;
   left: 60px;
 }
@@ -726,12 +728,17 @@ a {
   background-color: #f7e296;
 }
 
+.user-navigation {
+  display: flex;
+  flex-shrink: 0;
+  min-height: 49px;
+  margin-bottom: 47px;
+}
+
 .search-form {
   align-self: flex-start;
   width: 440px;
-  min-height: 49px;
   margin: 0;
-  margin-bottom: 47px;
 }
 
 .auth-menu {
@@ -742,10 +749,8 @@ a {
 
 .header-auth-menu {
   width: 280px;
-  min-height: 49px;
   margin: 0;
   margin-left: auto;
-  margin-bottom: 47px;
   padding: 0;
 }
 
@@ -768,9 +773,7 @@ a {
 
 .header-shopping-menu {
   width: 220px;
-  min-height: 49px;
   margin: 0;
-  margin-bottom: 47px;
   padding: 0;
 }
 
@@ -784,6 +787,8 @@ a {
   display: flex;
   flex-shrink: 0;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .header-site-menu {
@@ -1344,8 +1349,8 @@ a {
   margin-top: 68px;
 }
 
-.inner-page .container {
-  margin-top: 40px;
+.inner-page .header {
+  margin-bottom: 40px;
 }
 
 .page-title {
@@ -1420,8 +1425,7 @@ a {
 
   display: flex;
   flex-shrink: 0;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  flex-direction: column;
   box-sizing: border-box;
   width: 1200px;
   min-height: 323px;
@@ -1441,40 +1445,50 @@ a {
 }
 
 .footer-logo {
-  position: absolute;
   top: 60px;
   left: 20px;
 }
 
-.footer-auth-menu {
-  width: 225px;
-  min-height: 30px;
+.footer-user-block {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-end;
   margin: 0;
   margin-bottom: 40px;
-  margin-left: 683px;
   padding: 0;
+}
+
+.footer-auth-menu {
+  width: 225px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-page .footer-auth-menu {
+  justify-content: flex-end;
 }
 
 .footer-shopping-menu {
   width: 212px;
-  min-height: 30px;
   margin: 0;
-  margin-bottom: 40px;
-  margin-left: 40px;
   padding: 0;
+}
+
+.footer-site-block {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 60px;
 }
 
 .footer-site-menu {
   width: 440px;
-  height: 30px;
-  margin: 0 130px 60px;
 }
 
 .footer-details {
   width: 210px;
-  height: 30px;
   margin: 0;
-  margin-bottom: 60px;
   padding: 0;
 }
 

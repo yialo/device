@@ -11,24 +11,26 @@
     <header class="header">
       <nav class="navigation">
         <a class="logo header-logo disabled">Device</a>
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="get" name="search-data">
-          <label class="visually-hidden" for="search">Поиск по сайту</label>
-          <input class="search-field" type="search" name="search" id="search" placeholder="Поиск по сайту">
-          <button class="search-btn" type="submit">Найти</button>
-        </form>
-        <ul class="auth-menu header-auth-menu">
-          <li class="auth-item">
-            <a class="auth-link" href="#">Войти</a>
-          </li>
-        </ul>
-        <ul class="shopping-menu header-shopping-menu">
-          <li class="shopping-item">
-            <a class="shopping-link" href="#">Сравнить</a>
-          </li>
-          <li class="shopping-item">
-            <a class="shopping-link" href="#">Корзина</a>
-          </li>
-        </ul>
+        <div class="user-navigation">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get" name="search-data">
+            <label class="visually-hidden" for="search">Поиск по сайту</label>
+            <input class="search-field" type="search" name="search" id="search" placeholder="Поиск по сайту">
+            <button class="search-btn" type="submit">Найти</button>
+          </form>
+          <ul class="auth-menu header-auth-menu">
+            <li class="auth-item">
+              <a class="auth-link" href="#">Войти</a>
+            </li>
+          </ul>
+          <ul class="shopping-menu header-shopping-menu">
+            <li class="shopping-item">
+              <a class="shopping-link" href="#">Сравнить</a>
+            </li>
+            <li class="shopping-item">
+              <a class="shopping-link" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
         <ul class="site-menu header-site-menu">
           <li class="site-menu-item header-catalog">
             <a class="site-menu-link header-catalog-title" href="catalog.html">Каталог товаров</a>
@@ -240,32 +242,36 @@
     <footer class="footer">
       <div class="footer-wrapper">
         <a class="logo footer-logo disabled">Device</a>
-        <ul class="auth-menu footer-auth-menu">
-          <li class="auth-item">
-            <a class="auth-link" href="#">Войти</a>
-          </li>
-        </ul>
-        <ul class="shopping-menu footer-shopping-menu">
-          <li class="shopping-item">
-            <a class="shopping-link" href="#">Сравнить</a>
-          </li>
-          <li class="shopping-item">
-            <a class="shopping-link" href="#">Корзина</a>
-          </li>
-        </ul>
-        <p class="footer-details">г. Москва, ул. Строителей, 15</p>
-        <ul class="site-menu footer-site-menu">
-          <li class="site-menu-item">
-            <a class="site-menu-link" href="#">Доставка</a>
-          </li>
-          <li class="site-menu-item">
-            <a class="site-menu-link" href="#">Гарантия</a>
-          </li>
-          <li class="site-menu-item">
-            <a class="site-menu-link" href="#">Контакты</a>
-          </li>
-        </ul>
-        <p class="footer-details">Тел.: +7 (495) 495-95-95</p>
+        <div class="footer-user-block">
+          <ul class="auth-menu footer-auth-menu">
+            <li class="auth-item">
+              <a class="auth-link" href="#">Войти</a>
+            </li>
+          </ul>
+          <ul class="shopping-menu footer-shopping-menu">
+            <li class="shopping-item">
+              <a class="shopping-link" href="#">Сравнить</a>
+            </li>
+            <li class="shopping-item">
+              <a class="shopping-link" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-site-block">
+          <p class="footer-details">г. Москва, ул. Строителей, 15</p>
+          <ul class="site-menu footer-site-menu">
+            <li class="site-menu-item">
+              <a class="site-menu-link" href="#">Доставка</a>
+            </li>
+            <li class="site-menu-item">
+              <a class="site-menu-link" href="#">Гарантия</a>
+            </li>
+            <li class="site-menu-item">
+              <a class="site-menu-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <p class="footer-details">Тел.: +7 (495) 495-95-95</p>
+        </div>
         <ul class="footer-social">
           <li class="social-item">
             <a class="social-link social-link-facebook" href="#">
