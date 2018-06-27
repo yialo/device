@@ -42,10 +42,10 @@
 
 /* GLOBAL */
 
-.html,
+/* .html,
 .body {
   min-width: 1200px;
-}
+} */
 
 body {
   margin: 0;
@@ -84,15 +84,15 @@ a {
   clip: rect(0 0 0 0);
 }
 
-/* Header */
-
-.header {
-  width: 100%;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
-  padding: 0;
+}
+
+/* Header */
+
+.header {
   padding-top: 40px;
 }
 
@@ -109,6 +109,7 @@ a {
   width: 1160px;
   min-height: 186px;
   margin: 0;
+  /* margin: 0 auto; */
   padding: 19px 60px 0;
 
   background-color: rgba(240, 197, 46, 0.5);
@@ -435,13 +436,6 @@ a {
   padding: 0;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-}
-
 .main-section-title {
   font-weight: 800;
   font-size: 47px;
@@ -689,6 +683,14 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 12px 12px;
+}
+
+.promo-radio[id$="1"]:focus ~ .promo-control .promo-control-item[for$="1"],
+.promo-radio[id$="2"]:focus ~ .promo-control .promo-control-item[for$="2"],
+.promo-radio[id$="3"]:focus ~ .promo-control .promo-control-item[for$="3"] {
+  box-shadow:
+    0 0 1px 1px white,
+    0 0 1px 2px #4d90fe;
 }
 
 .popular {
