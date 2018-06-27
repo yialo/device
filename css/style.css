@@ -856,6 +856,8 @@ a {
 /* Layout-Main */
 
 .container {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 }
@@ -1379,10 +1381,18 @@ a {
   padding: 0;
 }
 
+.catalog-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .sorting {
+  position: relative;
+  left: -328px;
   margin: 0;
   margin-bottom: 69px;
   padding: 0;
+  z-index: 2;
 }
 
 .sorting-wrapper {
@@ -1393,8 +1403,8 @@ a {
   min-height: 70px;
   margin: 0;
   padding: 0;
-  padding-right: 20px;
   padding-left: 420px;
+  padding-right: 20px;
 }
 
 .sorting-title {
@@ -1410,7 +1420,18 @@ a {
 }
 
 .filter {
-  display: none;
+  display: flex;
+  width: 348px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 760px;
+}
+
+.catalog-item {
+  width: 360px;
 }
 
 /* Layout-Footer */
