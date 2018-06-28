@@ -9,63 +9,65 @@
   </head>
   <body class="main-page">
     <header class="header">
-      <nav class="navigation">
-        <a class="logo header-logo disabled">Device</a>
-        <div class="user-navigation">
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="get" name="search-data">
-            <label class="visually-hidden" for="search">Поиск по сайту</label>
-            <input class="search-field" type="search" name="search" id="search" placeholder="Поиск по сайту">
-            <button class="search-btn" type="submit">Найти</button>
-          </form>
-          <ul class="auth-menu header-auth-menu">
-            <li class="auth-item">
-              <a class="auth-link" href="#">Войти</a>
-            </li>
-          </ul>
-          <ul class="shopping-menu header-shopping-menu">
-            <li class="shopping-item">
-              <a class="shopping-link" href="#">Сравнить</a>
-            </li>
-            <li class="shopping-item">
-              <a class="shopping-link" href="#">Корзина</a>
-            </li>
-          </ul>
-        </div>
-        <ul class="site-menu header-site-menu">
-          <li class="site-menu-item header-catalog">
-            <a class="site-menu-link header-catalog-title" href="catalog.html">Каталог товаров</a>
-            <ul class="header-catalog-menu">
-              <li class="header-catalog-item">
-                <a class="header-catalog-link" href="#">Виртуальная реальность</a>
-              </li>
-              <li class="header-catalog-item">
-                <a class="header-catalog-link" href="catalog.html">Моноподы для селфи</a>
-              </li>
-              <li class="header-catalog-item">
-                <a class="header-catalog-link" href="#">Экшн-камеры</a>
-              </li>
-              <li class="header-catalog-item">
-                <a class="header-catalog-link" href="#">Фитнес-браслеты</a>
-              </li>
-              <li class="header-catalog-item">
-                <a class="header-catalog-link" href="#">Умные часы</a>
-              </li>
-              <li class="header-catalog-item">
-                <a class="header-catalog-link" href="#">Квадрокоптеры</a>
+      <div class="container">
+        <nav class="navigation">
+          <a class="logo header-logo disabled">Device</a>
+          <div class="user-navigation">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get" name="search-data">
+              <label class="visually-hidden" for="search">Поиск по сайту</label>
+              <input class="search-field" type="search" name="search" id="search" placeholder="Поиск по сайту">
+              <button class="search-btn" type="submit">Найти</button>
+            </form>
+            <ul class="auth-menu header-auth-menu">
+              <li class="auth-item">
+                <a class="auth-link" href="#">Войти</a>
               </li>
             </ul>
-          </li>
-          <li class="site-menu-item">
-            <a class="site-menu-link" href="#">Доставка</a>
-          </li>
-          <li class="site-menu-item">
-            <a class="site-menu-link" href="#">Гарантия</a>
-          </li>
-          <li class="site-menu-item">
-            <a class="site-menu-link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+            <ul class="shopping-menu header-shopping-menu">
+              <li class="shopping-item">
+                <a class="shopping-link" href="#">Сравнить</a>
+              </li>
+              <li class="shopping-item">
+                <a class="shopping-link" href="#">Корзина</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="site-menu header-site-menu">
+            <li class="site-menu-item header-catalog">
+              <a class="site-menu-link header-catalog-title" href="catalog.html">Каталог товаров</a>
+              <ul class="header-catalog-menu">
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="catalog.html">Моноподы для селфи</a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="#">Экшн-камеры</a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="#">Умные часы</a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </li>
+            <li class="site-menu-item">
+              <a class="site-menu-link" href="#">Доставка</a>
+            </li>
+            <li class="site-menu-item">
+              <a class="site-menu-link" href="#">Гарантия</a>
+            </li>
+            <li class="site-menu-item">
+              <a class="site-menu-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="main">
@@ -174,7 +176,7 @@
       </section>
 
       <section class="services">
-        <div class="services-wrapper">
+        <div class="container">
           <h2 class="visually-hidden">Сервис</h2>
           <input class="visually-hidden services-radio" type="radio" name="services-slider" value="services-slide-1" id="services-slide-1" tabindex="-1" checked>
           <input class="visually-hidden services-radio current" type="radio" name="services-slider" value="services-slide-2" id="services-slide-2" tabindex="-1">
@@ -248,7 +250,7 @@
     </main>
 
     <footer class="footer">
-      <div class="footer-wrapper">
+      <div class="container">
         <a class="logo footer-logo disabled">Device</a>
         <div class="footer-user-block">
           <ul class="auth-menu footer-auth-menu">

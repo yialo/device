@@ -203,13 +203,8 @@
   outline-offset: -2px;
 }
 
-.sorting-wrapper {
-  outline: 2px solid gold;
-  outline-offset: -2px;
-}
-
-.sorting-wrapper > * {
-  outline: 2px solid purple;
+.sorting {
+  outline: 2px solid orange;
   outline-offset: -2px;
 }
 

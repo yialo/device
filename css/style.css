@@ -80,12 +80,15 @@ a {
   clip: rect(0 0 0 0);
 }
 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 /* Header */
 
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 0;
   padding: 40px 0 0;
 }
@@ -423,12 +426,6 @@ a {
   padding: 0;
 }
 
-.container {
-  width: 1160px;
-  margin: 0;
-  padding: 0 20px;
-}
-
 .main-section-title {
   font-weight: 800;
   font-size: 47px;
@@ -489,9 +486,6 @@ a {
 }
 
 .promo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -686,9 +680,6 @@ a {
 }
 
 .popular {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   min-height: 238px;
   margin: 0 0 179px;
   padding: 0;
@@ -770,21 +761,15 @@ a {
 }
 
 .services {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 0 0 95px;
   padding: 0;
 
   background-color: #e5e5e5;
 }
 
-.services-wrapper {
+.services .container {
   display: flex;
   align-items: flex-start;
-  width: 1160px;
-  margin: 0;
-  padding: 0 20px;
 }
 
 .services-control {
@@ -915,9 +900,6 @@ a {
 }
 
 .brands {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -943,9 +925,6 @@ a {
 }
 
 .reference {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   min-height: 747px;
   margin: 0;
 }
@@ -1042,16 +1021,12 @@ a {
   height: 222px;
 }
 
-.title-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.title-container {
   min-height: 179px;
-}
+} /* TEMPORARY */
 
 .page-title {
   box-sizing: border-box;
-  width: 1160px;
   min-height: 48px;
   margin: 40px 0 20px;
   padding: 0 60px;
@@ -1067,7 +1042,6 @@ a {
 .breadcrumbs-list {
   display: flex;
   box-sizing: border-box;
-  width: 1160px;
   min-height: 24px;
   margin: 0;
   padding: 0 60px;
@@ -1328,9 +1302,6 @@ a {
 /* Footer */
 
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   min-height: 323px;
   margin: 0;
   padding: 0;
@@ -1340,18 +1311,12 @@ a {
   background-color: #464646;
 }
 
-.footer-wrapper {
+.footer .container {
   position: relative;
-
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  width: 1160px;
-  margin: 0;
   padding: 60px 0 0;
 }
 
-.footer-wrapper::before {
+.footer .container::before {
   content: "";
   position: absolute;
   top: 237px;
