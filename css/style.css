@@ -90,10 +90,6 @@ a {
   padding: 40px 0 0;
 }
 
-.inner-page .header {
-  margin-bottom: 40px;
-}
-
 .navigation {
   position: relative;
 
@@ -105,7 +101,7 @@ a {
   margin: 0;
   padding: 19px 60px 0;
 
-  background-color: rgba(240, 197, 46, 0.5);
+  background-color: #f7e296;
 }
 
 .main-page .navigation::after {
@@ -1046,13 +1042,19 @@ a {
   height: 222px;
 }
 
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 179px;
+}
+
 .page-title {
   box-sizing: border-box;
   width: 1160px;
   min-height: 48px;
-  margin: 0 20px 20px;
-  padding: 0;
-  padding-left: 60px;
+  margin: 40px 0 20px;
+  padding: 0 60px;
 
   font-weight: 800;
   font-size: 47px;
@@ -1067,9 +1069,8 @@ a {
   box-sizing: border-box;
   width: 1160px;
   min-height: 24px;
-  margin: 0 20px 48px;
-  padding: 0;
-  padding-left: 60px;
+  margin: 0;
+  padding: 0 60px;
 
   list-style-type: none;
 }
@@ -1098,20 +1099,106 @@ a {
   opacity: 0.1;
 }
 
-.filter {
-  width: 348px;
-
-  background-color: #eeeeee;
-}
-
-.filter-title,
-.sorting-title {
+.sorting-title,
+.filter-title {
   font-weight: 800;
   font-size: 16px;
   line-height: 24px;
   font-family: "Gilroy", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3.2px;
+}
+
+.sorting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 69px;
+  padding: 0;
+
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.sorting-wrapper {
+  display: flex;
+  box-sizing: border-box;
+  width: 1160px;
+  min-height: 70px;
+  margin: 0;
+  padding: 0 20px 0 400px;
+}
+
+.sorting-title {
+  margin: 0;
+  margin-right: 50px;
+  padding: 0;
+}
+
+.sorting-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.sorting-type-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0;
+}
+
+.sorting-type-btn {
+  display: block;
+
+  opacity: 0.3;
+}
+
+.sorting-type-btn:hover,
+.sorting-type-btn:focus {
+  opacity: 0.6;
+}
+
+.sorting-type-btn:active {
+  opacity: 1;
+}
+
+.sorting-type-item.current .sorting-type-btn,
+.sorting-type-item.current .sorting-type-btn:hover,
+.sorting-type-item.current .sorting-type-btn:focus {
+  opacity: 1;
+}
+
+.sorting-direction-item {
+  margin: 0;
+  padding: 0;
+}
+
+.sorting-direction-btn,
+.sorting-direction-btn:hover,
+.sorting-direction-btn:focus,
+.sorting-direction-btn:active {
+  display: block;
+  width: 11px;
+  height: 10px;
+
+  opacity: 1;
+}
+
+.sorting-direction-item:first-child .sorting-direction-btn {
+  background-image: url("../img/icon-up-dir.svg");
+}
+
+.sorting-direction-item:last-child .sorting-direction-btn {
+  background-image: url("../img/icon-down-dir.svg");
+}
+
+.filter {
+  width: 348px;
+
+  background-color: #eeeeee;
 }
 
 .filter-group {
@@ -1150,78 +1237,6 @@ a {
 
 .filter-field:disabled + .filter-option-title {
   color: #a6a6a6;
-}
-
-.sorting {
-  position: relative;
-  left: -328px;
-  z-index: 2;
-
-  margin: 0;
-  margin-bottom: 69px;
-  padding: 0;
-
-  background-color: rgba(0, 0, 0, 0.08);
-}
-
-.sorting-wrapper {
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
-  width: 1200px;
-  min-height: 70px;
-  margin: 0;
-  padding: 0;
-  padding-right: 20px;
-  padding-left: 420px;
-}
-
-.sorting-title {
-  margin: 0;
-  margin-right: 50px;
-  padding: 0;
-}
-
-.sorting-list {
-  display: flex;
-  margin: 0;
-  padding: 0;
-
-  list-style-type: none;
-}
-
-.sorting-type-item {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 0;
-}
-
-.sorting-type-btn {
-  opacity: 0.3;
-}
-
-.sorting-type-btn:hover,
-.sorting-type-btn:focus {
-  opacity: 0.6;
-}
-
-.sorting-type-btn:active {
-  opacity: 1;
-}
-
-.sorting-type-item.current .sorting-type-btn,
-.sorting-type-item.current .sorting-type-btn:hover,
-.sorting-type-item.current .sorting-type-btn:focus {
-  opacity: 1;
-}
-
-.sorting-direction-btn,
-.sorting-direction-btn:hover,
-.sorting-direction-btn:focus,
-.sorting-direction-btn:active {
-  opacity: 1;
 }
 
 .catalog-list {
@@ -1316,9 +1331,10 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 323px;
   margin: 0;
   padding: 0;
-  min-height: 323px;
+
   color: #ffffff;
 
   background-color: #464646;
@@ -1326,6 +1342,7 @@ a {
 
 .footer-wrapper {
   position: relative;
+
   display: flex;
   flex-direction: column;
   box-sizing: border-box;

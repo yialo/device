@@ -5,7 +5,7 @@
     <title>Моноподы для селфи – Каталог товаров | HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/outline.css"> -->
+    <link rel="stylesheet" href="css/outline.css">
   </head>
   <body class="inner-page">
     <header class="header">
@@ -72,19 +72,49 @@
     </header>
 
     <main class="main">
+      <div class="title-wrapper">
+        <h1 class="page-title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs-item current">
+            <a class="breadcrumbs-link disabled">Моноподы для селфи</a>
+          </li>
+        </ul>
+      </div>
 
-      <h1 class="page-title">Моноподы для селфи</h1>
-      <ul class="breadcrumbs-list">
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html">Главная</a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="#">Каталог товаров</a>
-        </li>
-        <li class="breadcrumbs-item current">
-          <a class="breadcrumbs-link disabled">Моноподы для селфи</a>
-        </li>
-      </ul>
+      <div class="sorting">
+        <div class="sorting-wrapper">
+          <h2 class="sorting-title">Сортировка:</h2>
+          <ul class="sorting-list sorting-type-list">
+            <li class="sorting-type-item current">
+              <a class="sorting-type-btn" href="#">По цене</a>
+            </li>
+            <li class="sorting-type-item">
+              <a class="sorting-type-btn" href="#">По типу</a>
+            </li>
+            <li class="sorting-type-item">
+              <a class="sorting-type-btn" href="#">По популярности</a>
+            </li>
+          </ul>
+          <ul class="sorting-list sorting-direction-list">
+            <li class="sorting-direction-item">
+              <a class="sorting-direction-btn" href="#">
+                <span class="visually-hidden">В прямом порядке</span>
+                </a>
+            </li>
+            <li class="sorting-direction-item current">
+              <a class="sorting-direction-btn" href="#">
+                <span class="visually-hidden">В обратном порядке</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
       <section class="filter">
         <h2 class="filter-title">Фильтр:</h2>
@@ -135,35 +165,6 @@
           <button class="btn follow-btn filter-btn" type="submit">Показать</button>
         </form>
       </section>
-
-      <div class="sorting">
-        <div class="sorting-wrapper">
-          <h2 class="sorting-title">Сортировка:</h2>
-          <ul class="sorting-list sorting-type-list">
-            <li class="sorting-type-item current">
-              <a class="sorting-type-btn" href="#">По цене</a>
-            </li>
-            <li class="sorting-type-item">
-              <a class="sorting-type-btn" href="#">По типу</a>
-            </li>
-            <li class="sorting-type-item">
-              <a class="sorting-type-btn" href="#">По популярности</a>
-            </li>
-          </ul>
-          <ul class="sorting-list sorting-direction-list">
-            <li class="sorting-direction-item">
-              <a class="sorting-direction-btn" href="#">
-                <span class="visually-hidden">В прямом порядке</span>
-                </a>
-            </li>
-            <li class="sorting-direction-item current">
-              <a class="sorting-direction-btn" href="#">
-                <span class="visually-hidden">В обратном порядке</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
 
       <section class="catalog">
         <h2 class="visually-hidden">Список моноподов</h2>

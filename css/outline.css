@@ -173,6 +173,11 @@
   outline-offset: -2px;
 }
 
+.copyright {
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+
 .feedback-form {
   outline: 2px solid blue;
   outline-offset: -2px;
@@ -198,13 +203,18 @@
   outline-offset: -2px;
 }
 
-.filter {
-  outline: 2px solid green;
+.sorting-wrapper {
+  outline: 2px solid gold;
   outline-offset: -2px;
 }
 
-.sorting-wrapper {
-  outline: 2px solid gold;
+.sorting-wrapper > * {
+  outline: 2px solid purple;
+  outline-offset: -2px;
+}
+
+.filter {
+  outline: 2px solid green;
   outline-offset: -2px;
 }
 
@@ -216,9 +226,4 @@
 .pagination {
   outline: 2px solid orange;
   outline-offset: -2px;
-}
-
-.copyright {
-  outline: 1px solid red;
-  outline-offset: -1px;
 }
