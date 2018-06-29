@@ -18,14 +18,14 @@
     /* background-image: url("../_tmp/device-index-slides-3.jpg"); */
     /* background-image: url("../_tmp/device-index-overlays.jpg"); */
     background-repeat: no-repeat;
-    background-position: -120px 0;
+    background-position: center 0;
 }
 
 .inner-page {
     background-image: url("../_tmp/device-catalog.jpg");
     /* background-image: url("../_tmp/device-catalog-overlays.jpg"); */
     background-repeat: no-repeat;
-    background-position: -120px 0;
+    background-position: center 0;
 }
 
 .container {
@@ -63,11 +63,6 @@
   outline-offset: -2px;
 }
 
-.promo-control {
-  outline: 2px solid blue;
-  outline-offset: -2px;
-}
-
 .promo-list {
   outline: 2px solid orange;
   outline-offset: -2px;
@@ -79,12 +74,22 @@
 }
 
 .promo-image {
-  outline: 2px solid maroon;
-  outline-offset: -2px;
+outline: 2px solid maroon;
+outline-offset: -2px;
 }
 
 .promo-text {
   outline: 2px solid gold;
+  outline-offset: -2px;
+}
+
+.promo-table {
+  outline: 1px solid maroon;
+  outline-offset: -1px;
+}
+
+.promo-control-list {
+  outline: 2px solid blue;
   outline-offset: -2px;
 }
 
@@ -143,10 +148,10 @@
   outline-offset: -2px;
 }
 
-.reference {
+/* .reference {
   outline: 2px solid blue;
   outline-offset: -2px;
-}
+} */
 
 .reference-follow-btn {
   outline: 2px solid purple;
