@@ -28,6 +28,16 @@
     background-position: -120px 0;
 }
 
+.container {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+.header {
+  outline: 2px solid maroon;
+  outline-offset: -2px;
+}
+
 .header .logo {
   outline: 2px solid blue;
   outline-offset: -2px;
@@ -45,11 +55,6 @@
 
 .site-menu {
   outline: 2px solid maroon;
-  outline-offset: -2px;
-}
-
-.container {
-  outline: 2px solid red;
   outline-offset: -2px;
 }
 
