@@ -5,7 +5,7 @@
     <title>Моноподы для селфи – Каталог товаров | HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/outline.css">
+    <!-- <link rel="stylesheet" href="css/outline.css"> -->
   </head>
   <body class="inner-page">
     <header class="header">
@@ -83,7 +83,7 @@
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="#">Каталог товаров</a>
           </li>
-          <li class="breadcrumbs-item current">
+          <li class="breadcrumbs-item">
             <a class="breadcrumbs-link disabled">Моноподы для селфи</a>
           </li>
         </ul>
@@ -213,13 +213,19 @@
           <div class="pagination">
             <ul class="pagination-list">
               <li class="pagination-item">
-                <a class="pagination-btn disabled">Назад</a>
+                <a class="pagination-direction-btn" href="#">Назад</a>
               </li>
-              <li class="pagination-item pagination-indicator current">1</li>
-              <li class="pagination-item pagination-indicator">2</li>
-              <li class="pagination-item pagination-indicator">3</li>
+              <li class="pagination-item current">
+                <a class="pagination-number-btn" href="#">1</a>
+              </li>
               <li class="pagination-item">
-                <a class="pagination-btn" href="#">Вперед</a>
+                <a class="pagination-number-btn" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-number-btn" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-direction-btn" href="#">Вперед</a>
               </li>
             </ul>
           </div>
