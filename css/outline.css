@@ -12,22 +12,6 @@
   background-color: transparent !important;
 }
 
-.main-page {
-    background-image: url("../_tmp/device-index-slides-1.jpg");
-    /* background-image: url("../_tmp/device-index-slides-2.jpg"); */
-    /* background-image: url("../_tmp/device-index-slides-3.jpg"); */
-    /* background-image: url("../_tmp/device-index-overlays.jpg"); */
-    background-repeat: no-repeat;
-    background-position: center 0;
-}
-
-.inner-page {
-    background-image: url("../_tmp/device-catalog.jpg");
-    /* background-image: url("../_tmp/device-catalog-overlays.jpg"); */
-    background-repeat: no-repeat;
-    background-position: center 0;
-}
-
 .container {
   outline: 2px solid red;
   outline-offset: -2px;
