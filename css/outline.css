@@ -197,22 +197,31 @@ outline-offset: -2px;
   outline-offset: -2px;
 }
 
-.sorting {
-  outline: 2px solid orange;
+.catalog-wrapper {
+  outline: 2px solid blue;
   outline-offset: -2px;
 }
 
-.filter {
-  outline: 2px solid green;
+.pane {
+  outline: 2px solid purple;
   outline-offset: -2px;
+  display: flex;
+  flex-direction: column;
 }
 
-.catalog {
-  outline: 2px solid red;
-  outline-offset: -2px;
+.filter-pane * {
+  outline: 1px solid green;
+  outline-offset: -1px;
 }
 
+.sorting,
+.catalog,
 .pagination {
-  outline: 2px solid orange;
-  outline-offset: -2px;
+  outline: 1px solid orange;
+  outline-offset: -1px;
+}
+
+.sorting * {
+  outline: 1px solid purple;
+  outline-offset: -1px;
 }
