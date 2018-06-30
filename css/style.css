@@ -473,11 +473,6 @@ a {
   background-color: #f0c52e;
   -webkit-transform: scale(1);
           transform: scale(1);
-}
-
-.btn:hover::before {
-  -webkit-transform: scaley(5);
-          transform: scaley(5);
 
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
@@ -487,6 +482,11 @@ a {
           transition-property: -webkit-transform;
           transition-property:         transform;
           transition-property:         transform, -webkit-transform;
+}
+
+.btn:hover::before {
+  -webkit-transform: scaley(5);
+          transform: scaley(5);
 }
 
 .follow-btn:active {
@@ -713,15 +713,6 @@ a {
   background-size: 12px 12px;
 }
 
-.promo-radio[id$="1"]:focus ~ .promo-control-list .promo-control-label[for$="1"],
-.promo-radio[id$="2"]:focus ~ .promo-control-list .promo-control-label[for$="2"],
-.promo-radio[id$="3"]:focus ~ .promo-control-list .promo-control-label[for$="3"] {
-  -webkit-box-shadow: 0 0 1px 1px white,
-  0 0 1px 2px #4d90fe;
-          box-shadow: 0 0 1px 1px white,
-  0 0 1px 2px #4d90fe;
-}
-
 .popular {
   min-height: 238px;
   margin: 0 0 179px;
@@ -777,6 +768,10 @@ a {
 
 .popular-link::before {
   background-color: rgba(240, 197, 46, 0.5);
+
+  transition-timing-function: ease;
+  transition-duration: 0.1s;
+  transition-property: background-color;
 }
 
 .popular-link:hover::before {
@@ -1246,6 +1241,7 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-height: 70px;
+  margin-bottom: 69px;
 
   background-color: rgba(0, 0, 0, 0.08);
 }
@@ -1283,15 +1279,15 @@ a {
   opacity: 0.3;
 }
 
-.current .sorting-type-btn {
-  opacity: 1;
-}
-
 .sorting-type-btn:hover {
   opacity: 0.6;
 }
 
 .sorting-type-btn:active {
+  opacity: 1;
+}
+
+.current .sorting-type-btn {
   opacity: 1;
 }
 
@@ -1303,10 +1299,6 @@ a {
   opacity: 0.3;
 }
 
-.current .sorting-direction-btn {
-  opacity: 1;
-}
-
 .sorting-direction-btn:hover {
   opacity: 0.6;
 }
@@ -1315,6 +1307,9 @@ a {
   opacity: 0.3;
 }
 
+.current .sorting-direction-btn {
+  opacity: 1;
+}
 
 .sorting-direction-item:first-child .sorting-direction-btn {
   background-image: url("../img/icon-up-dir.svg");
@@ -1325,9 +1320,9 @@ a {
 }
 
 .catalog {
-  margin-left: 72px;
-  margin-right: 20px;
   width: 760px;
+  margin-right: 20px;
+  margin-left: 72px;
 }
 
 .catalog-list {
@@ -1336,6 +1331,7 @@ a {
   display: flex;
       flex-wrap: wrap;
   margin: 0;
+  margin-left: -40px;
   padding: 0;
 
   list-style-type: none;
@@ -1344,31 +1340,45 @@ a {
 }
 
 .catalog-item {
+  position: relative;
+
   width: 360px;
+  margin-left: 40px;
 }
 
-.catalog-item-title {
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "Gilroy", "Arial", sans-serif;
-  letter-spacing: 0.18px;
+.catalog-image {
+  width: 360px;
+  min-height: 380px;
+  margin-bottom: 34px;
 }
 
-.catalog-item:not(.active) .catalog-btn {
+.catalog-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 360px;
+  height: 380px;
+  padding-top: 172px;
+
+  background-color: rgba(238, 238, 238, 0.7);
+}
+
+.catalog-item:not(.current) .catalog-overlay {
   visibility: hidden;
 }
 
-.catalog-price {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  font-family: "Gilroy", "Arial", sans-serif;
-  color: #464646;
-  letter-spacing: 0.16px;
+.catalog-btn {
+  z-index: 0;
+
+  width: 200px;
+  margin: 0 auto 18px;
 }
 
 .catalog-compare-btn {
+  display: block;
+  margin: 0 auto;
+
   font-weight: 300;
   font-size: 13px;
   line-height: 36px;
@@ -1388,21 +1398,37 @@ a {
   opacity: 0.2;
 }
 
-.pagination {
-  width: 760px;
-  margin-left: 72px;
-  margin-right: 20px;
-  background-color: rgba(0, 0, 0, 0.08);
+.catalog-item-title {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  letter-spacing: 0.18px;
+}
+
+.catalog-price {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: #464646;
+  letter-spacing: 0.16px;
 }
 
 .pagination-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 760px;
+  min-height: 70px;
   margin: 0;
+  margin-right: 20px;
+  margin-left: 72px;
   padding: 0;
 
   list-style-type: none;
+
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .pagination-item {
@@ -1415,10 +1441,6 @@ a {
   letter-spacing: 3.2px;
 }
 
-.current .pagination-number-btn {
-  opacity: 1;
-}
-
 .pagination-number-btn {
   opacity: 0.3;
 }
@@ -1428,6 +1450,10 @@ a {
 }
 
 .pagination-number-btn:active {
+  opacity: 1;
+}
+
+.current .pagination-number-btn {
   opacity: 1;
 }
 

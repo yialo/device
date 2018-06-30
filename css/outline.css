@@ -216,12 +216,18 @@ outline-offset: -2px;
 
 .sorting,
 .catalog,
-.pagination {
+.pagination-list {
   outline: 1px solid orange;
   outline-offset: -1px;
 }
 
 .sorting * {
   outline: 1px solid purple;
+  outline-offset: -1px;
+}
+
+.catalog-item,
+.catalog-item * {
+  outline: 1px solid red;
   outline-offset: -1px;
 }
