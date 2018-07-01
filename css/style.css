@@ -281,6 +281,7 @@ a {
 
 .shopping-item {
   width: 100px;
+
   text-align: right;
 }
 
@@ -475,8 +476,6 @@ a {
   -webkit-transform: scale(1);
           transform: scale(1);
 
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-property: -webkit-transform;
@@ -716,7 +715,7 @@ a {
 
 .popular {
   min-height: 238px;
-  margin: 0 0 179px;
+  margin-bottom: 179px;
 }
 
 .popular-list {
@@ -735,21 +734,20 @@ a {
 
 .popular-item {
   width: 160px;
-  padding: 195px 0 0;
+  padding-top: 193px;
 
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
-  letter-spacing: 0;
+  letter-spacing: 0.18px;
 }
 
 .popular-link {
   position: relative;
 
-  display: block;
-
-  text-align: left;
+  margin: 0;
+  padding: 0;
 }
 
 .popular-link:active {
@@ -770,8 +768,7 @@ a {
 .popular-link::before {
   background-color: rgba(240, 197, 46, 0.5);
 
-  transition-timing-function: ease;
-  transition-duration: 0.1s;
+  transition-duration: 250ms;
   transition-property: background-color;
 }
 
@@ -892,7 +889,7 @@ a {
 .services-radio[id$="1"]:checked ~ .services-control-list .services-btn[for$="1"]::before,
 .services-radio[id$="2"]:checked ~ .services-control-list .services-btn[for$="2"]::before,
 .services-radio[id$="3"]:checked ~ .services-control-list .services-btn[for$="3"]::before {
-  width: 278px;
+  width: 277px;
 
   background-color: #000000;
   -webkit-transform: scaley(5);
@@ -986,12 +983,56 @@ a {
 }
 
 .brands-item {
-  height: 100px;
+  position: relative;
+  width: 260px;
+  min-height: 100px;
+}
+
+.brands-overlay {
+  position: absolute;
+  background-color: #d8d8d8;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+  top: 0;
+  width: 260px;
+  min-height: 100px;
+  z-index: 1;
+  transition-property: opacity;
+  transition-duration: 250ms;
+}
+
+.brands-item:nth-child(1) .brands-overlay {
+  background-image: url("../img/logo-1-overlay.png");
+}
+
+.brands-item:nth-child(2) .brands-overlay {
+  background-image: url("../img/logo-2-overlay.png");
+}
+
+.brands-item:nth-child(3) .brands-overlay {
+  background-image: url("../img/logo-3-overlay.png");
+}
+
+.brands-item:nth-child(4) .brands-overlay {
+  background-image: url("../img/logo-4-overlay.png");
 }
 
 .brands-image {
+  display: block;
   width: 260px;
   height: 100px;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 250ms;
+}
+
+.brands-overlay:hover {
+  opacity: 0;
+}
+
+.brands-overlay:hover ~ .brands-image {
+  opacity: 1;
 }
 
 .reference {
@@ -1010,6 +1051,9 @@ a {
 }
 
 .reference-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 560px;
 }
 
@@ -1344,8 +1388,8 @@ a {
   position: relative;
 
   width: 360px;
-  margin-left: 40px;
   min-height: 506px;
+  margin-left: 40px;
 }
 
 .catalog-image {
@@ -1359,8 +1403,8 @@ a {
   top: 0;
   left: 0;
 
-  width: 360px;
   box-sizing: border-box;
+  width: 360px;
   height: 380px;
   padding-top: 172px;
 
@@ -1402,12 +1446,13 @@ a {
 }
 
 .catalog-item-title {
+  margin: 0;
+
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
   letter-spacing: 0.18px;
-  margin: 0;
 }
 
 .catalog-price {
@@ -1762,10 +1807,8 @@ a {
   cursor: pointer;
   opacity: 0.5;
 
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-property: opacity, -webkit-transform;
           transition-property: opacity, -webkit-transform;
           transition-property: transform, opacity;

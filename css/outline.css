@@ -1,6 +1,6 @@
 /* AUXILIARY LAYOUT STYLES */
 
-.main-page,
+/* .main-page,
 .inner-page,
 .main-page *,
 .main-page *::before,
@@ -10,14 +10,11 @@
 .inner-page *::after {
   color: #000000 !important;
   background-color: transparent !important;
-}
+} */
 
-.header {
-  outline: 1px solid red;
-  outline-offset: -1px;
-}
-
-.header * {
-  outline: 1px solid blue;
+body *,
+body *::before,
+body *::after {
+  outline: 1px solid green;
   outline-offset: -1px;
 }
