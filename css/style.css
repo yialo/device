@@ -984,37 +984,38 @@ a {
 
 .brands-item {
   position: relative;
+
   width: 260px;
   min-height: 100px;
 }
 
-.brands-overlay {
+.brands-underlay {
   position: absolute;
+  top: 0;
+  z-index: -1;
+
+  width: 260px;
+  min-height: 100px;
+
   background-color: #d8d8d8;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.2;
-  top: 0;
-  width: 260px;
-  min-height: 100px;
-  z-index: 1;
-  transition-property: opacity;
-  transition-duration: 250ms;
 }
 
-.brands-item:nth-child(1) .brands-overlay {
+.brands-item:nth-child(1) .brands-underlay {
   background-image: url("../img/logo-1-overlay.png");
 }
 
-.brands-item:nth-child(2) .brands-overlay {
+.brands-item:nth-child(2) .brands-underlay {
   background-image: url("../img/logo-2-overlay.png");
 }
 
-.brands-item:nth-child(3) .brands-overlay {
+.brands-item:nth-child(3) .brands-underlay {
   background-image: url("../img/logo-3-overlay.png");
 }
 
-.brands-item:nth-child(4) .brands-overlay {
+.brands-item:nth-child(4) .brands-underlay {
   background-image: url("../img/logo-4-overlay.png");
 }
 
@@ -1022,16 +1023,14 @@ a {
   display: block;
   width: 260px;
   height: 100px;
+
   opacity: 0;
-  transition-property: opacity;
+
   transition-duration: 250ms;
+  transition-property: opacity;
 }
 
-.brands-overlay:hover {
-  opacity: 0;
-}
-
-.brands-overlay:hover ~ .brands-image {
+.brands-image:hover {
   opacity: 1;
 }
 
@@ -1400,21 +1399,21 @@ a {
 }
 
 .catalog-overlay {
-  visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 0;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   box-sizing: border-box;
   width: 360px;
   height: 380px;
   padding-top: 172px;
 
   background-color: rgba(238, 238, 238, 0.7);
-  z-index: 0;
+  visibility: hidden;
 }
 
 .catalog-overlay:hover,
