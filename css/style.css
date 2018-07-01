@@ -500,6 +500,10 @@ a {
   color: #464646;
 }
 
+.promo .container {
+  position: relative;
+}
+
 .promo-list {
   margin: 0;
   padding: 0;
@@ -512,7 +516,7 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 1160px;
-  min-height: 582px;
+  min-height: 594px;
   padding: 20px 0;
 }
 
@@ -564,6 +568,7 @@ a {
       flex-direction: column;
   justify-content: flex-start;
   width: 560px;
+  padding-top: 15px;
 
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
@@ -576,7 +581,7 @@ a {
 
   -ms-flex-order: 1;
   order: 1;
-  margin: 62px 0 18px;
+  margin-bottom: 18px;
   padding: 0;
 
   font-weight: 800;
@@ -672,16 +677,16 @@ a {
 }
 
 .promo-control-list {
-  position: relative;
+  position: absolute;
   bottom: 253px;
-  left: 998px;
+  right: 103px;
   z-index: 2;
 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
-  width: 80px;
+  width: 78px;
   height: 12px;
   margin: 0;
   padding: 0;
@@ -778,32 +783,36 @@ a {
 
 .popular-link::after {
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 .popular-item:nth-child(1) .popular-link::after {
   background-image: url("../img/popular-1.svg");
+  background-position: 31px 52px;
 }
 
 .popular-item:nth-child(2) .popular-link::after {
   background-image: url("../img/popular-2.svg");
-  background-position-y: bottom;
+  background-position: 38px 41px;
 }
 
 .popular-item:nth-child(3) .popular-link::after {
   background-image: url("../img/popular-3.svg");
+  background-position: 49px 38px;
 }
 
 .popular-item:nth-child(4) .popular-link::after {
   background-image: url("../img/popular-4.svg");
+  background-position: 28px 50px;
 }
 
 .popular-item:nth-child(5) .popular-link::after {
   background-image: url("../img/popular-5.svg");
+  background-position: 55px 32px;
 }
 
 .popular-item:nth-child(6) .popular-link::after {
   background-image: url("../img/popular-6.svg");
+  background-position: 13px 49px;
 }
 
 .popular-link:active::after {
