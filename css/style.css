@@ -359,7 +359,7 @@ a {
 
 .header-catalog-item {
   width: 200px;
-  height: 36px;
+  min-height: 36px;
 
   font-weight: 300;
   font-size: 15px;
@@ -1393,12 +1393,17 @@ a {
 }
 
 .catalog-image {
+  display: block;
   width: 360px;
   height: 380px;
   margin-bottom: 34px;
 }
 
 .catalog-overlay {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -1409,23 +1414,22 @@ a {
   padding-top: 172px;
 
   background-color: rgba(238, 238, 238, 0.7);
+  z-index: 0;
 }
 
-.catalog-item:not(.current) .catalog-overlay {
-  visibility: hidden;
+.catalog-overlay:hover,
+.catalog-image:hover ~ .catalog-overlay {
+  visibility: visible;
 }
 
 .catalog-btn {
   z-index: 0;
 
   width: 200px;
-  margin: 0 auto 18px;
+  margin-bottom: 18px;
 }
 
 .catalog-compare-btn {
-  display: block;
-  margin: 0 auto;
-
   font-weight: 300;
   font-size: 13px;
   line-height: 36px;
