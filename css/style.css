@@ -1624,17 +1624,6 @@ a {
   margin-bottom: 18px;
 }
 
-.filter-color .filter-option-title::before {
-  top: -2px;
-  width: 27px;
-  height: 23px;
-  background-image: url("../img/checkbox-off.svg");
-}
-
-.filter-checkbox-field:checked + .filter-option-title::before {
-  background-image: url("../img/checkbox-on.svg");
-}
-
 .filter-bluetooth .filter-group-title {
   margin-bottom: 18px;
 }
@@ -1643,6 +1632,20 @@ a {
   margin-bottom: 31px;
 }
 
+.filter-checkbox-field:checked + .filter-option-title:active::before,
+.filter-color .filter-option-title::before {
+  top: -2px;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+}
+
+.filter-checkbox-field:not(:checked) + .filter-option-title:active::before,
+.filter-checkbox-field:checked + .filter-option-title::before {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.filter-radio-field:checked + .filter-option-title:active::before,
 .filter-bluetooth .filter-option-title::before {
   top: -4px;
   width: 25px;
@@ -1650,12 +1653,25 @@ a {
   background-image: url("../img/radio-off.svg");
 }
 
+.filter-radio-field:not(:checked) + .filter-option-title:active::before,
 .filter-radio-field:checked + .filter-option-title::before {
   background-image: url("../img/radio-on.svg");
 }
 
+.filter-option-title:hover::before {
+  opacity: 0.6;
+}
+
+.filter-option-title:active::before {
+  opacity: 1;
+}
+
 .filter-field:disabled + .filter-option-title {
   color: #a6a6a6;
+}
+
+.filter-field:disabled + .filter-option-title::before {
+  opacity: 0.25;
 }
 
 .filter-btn {
