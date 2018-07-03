@@ -177,11 +177,11 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.search-field::-ms-input-placeholder {
+.search-field:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.search-field:-ms-input-placeholder {
+.search-field::-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -193,11 +193,11 @@ a {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.search-field:hover::-ms-input-placeholder {
+.search-field:hover:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.search-field:hover:-ms-input-placeholder {
+.search-field:hover::-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -205,19 +205,23 @@ a {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.search-field:focus::-webkit-input-placeholder {
+.search-form:focus::-webkit-input-placeholder,
+.search-form:active .search-field::-webkit-input-placeholder {
   visibility: hidden;
 }
 
-.search-field:focus:-ms-input-placeholder {
+.search-form:focus:-ms-input-placeholder,
+.search-form:active .search-field:-ms-input-placeholder {
   visibility: hidden;
 }
 
-.search-field:focus::-ms-input-placeholder {
+.search-form:focus::-ms-input-placeholder,
+.search-form:active .search-field::-ms-input-placeholder {
   visibility: hidden;
 }
 
-.search-field:focus::placeholder {
+.search-form:focus::placeholder,
+.search-form:active .search-field::placeholder {
   visibility: hidden;
 }
 
@@ -372,15 +376,20 @@ a {
   align-items: flex-start;
   margin-bottom: 39px;
 
+  -webkit-box-align: start;
+  -webkit-box-pack: justify;
+  -ms-flex-align: start;
+  -ms-flex-pack: justify;
+}
+
+.site-menu,
+.header-catalog-title {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3.6px;
-
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
 }
 
 .header-catalog-wrapper {
@@ -473,7 +482,8 @@ a {
   left: -60px;
   z-index: -1;
 
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 1160px;
   height: 162px;
 
@@ -488,12 +498,14 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 500px;
   margin: 0;
   padding: 0;
 
   list-style-type: none;
+
+  -ms-flex-wrap: wrap;
 }
 
 .header .site-menu-item {
@@ -555,10 +567,13 @@ a {
 .btn {
   position: relative;
 
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0 10px;
 
   font-weight: 800;
@@ -571,6 +586,11 @@ a {
   background-color: transparent;
   border-style: none;
   cursor: pointer;
+
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 
 .btn::before {
@@ -897,7 +917,8 @@ a {
 }
 
 .popular-item {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 160px;
   padding-top: 193px;
 
@@ -1225,10 +1246,16 @@ a {
 }
 
 .reference-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   width: 560px;
   min-height: 520px;
+
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
 }
 
 .reference-item-title {
