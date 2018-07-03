@@ -555,14 +555,16 @@ a {
 .btn {
   position: relative;
 
-  display: block;
-  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
 
   font-weight: 800;
   font-size: 18px;
   line-height: 40px;
   font-family: "Gilroy", "Arial", sans-serif;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 3.6px;
 
@@ -574,14 +576,14 @@ a {
 .btn::before {
   content: "";
   position: absolute;
-  top: 16px;
+  top: 40%;
   left: 0;
   z-index: -1;
 
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: inherit;
-  height: 8px;
+  height: 20%;
 
   background-color: #f0c52e;
   -webkit-transform: scale(1);
