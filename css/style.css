@@ -1387,7 +1387,7 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-height: 24px;
-  margin: 0 0 40px;
+  margin: 0 0 46px;
   padding: 0 60px;
 
   list-style-type: none;
@@ -1403,16 +1403,19 @@ a {
 
 .breadcrumbs-item:not(:last-child) {
   position: relative;
+
   padding-right: 38px;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
   content: "";
+  position: absolute;
   top: 9px;
   right: 18px;
+
   width: 4px;
   height: 7px;
-  position: absolute;
+
   background-image: url("../img/nav-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1420,6 +1423,7 @@ a {
 
 .breadcrumbs-link {
   display: block;
+
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1464,7 +1468,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   justify-content: flex-end;
-  min-height: 70px;
+  padding-top: 23px;
   padding-right: 68px;
 
   background-color: rgba(0, 0, 0, 0.08);
@@ -1475,6 +1479,8 @@ a {
 
 .filter-title {
   width: 200px;
+  margin: 0;
+  margin-bottom: 23px;
 
   font-weight: 800;
   font-size: 16px;
@@ -1487,16 +1493,41 @@ a {
 .filter-form {
   align-self: flex-end;
   width: 200px;
+  padding-top: 81px;
   padding-right: 68px;
 
   -ms-flex-item-align: end;
 }
 
 .filter-group {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
   border-style: none;
 }
 
+.filter-group:nth-of-type(1) {
+  min-height: 200px;
+}
+
+.filter-group::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #000000;
+}
+
 .filter-group-title {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -1504,7 +1535,54 @@ a {
   letter-spacing: 0.18px;
 }
 
-.filter-slider-label {
+.filter-scale {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #dbdbdb;
+}
+
+.filter-bar {
+  width: 110px;
+  height: 2px;
+  background-color: #91c92f;
+}
+
+.filter-toggle {
+  position: absolute;
+  width: 20px;
+  height: 22px;
+}
+
+.filter-toggle-min {
+  top: -9px;
+  left: -6px;
+}
+
+.filter-toggle-max {
+  top: -9px;
+  left: 107px;
+}
+
+.filter-toggle::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 22px;
+  background-image: url("../img/filter-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.filter-toggle:active::before {
+  transform: scale(1.1);
+}
+
+.filter-toggle-label {
+  position: absolute;
+  top: 20px;
+  width: 75px;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -1512,6 +1590,14 @@ a {
   letter-spacing: 0;
 
   opacity: 0.2;
+}
+
+.filter-toggle-min .filter-toggle-label {
+  left: 5px;
+}
+
+.filter-toggle-max .filter-toggle-label {
+  left: -17px;
 }
 
 .filter-option-list {
@@ -1543,6 +1629,7 @@ a {
           box-sizing: border-box;
   min-height: 70px;
   margin-bottom: 69px;
+  padding-top: 23px;
 
   background-color: rgba(0, 0, 0, 0.08);
 }
@@ -1663,11 +1750,11 @@ a {
   top: 29px;
   right: 27px;
   z-index: 1;
-  padding: 15px 14px;
 
   box-sizing: border-box;
   width: 60px;
   height: 60px;
+  padding: 15px 14px;
 
   font-weight: 800;
   font-size: 14px;
