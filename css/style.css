@@ -122,7 +122,7 @@ a {
 }
 
 .header-logo {
-  top: -24px;
+  top: -23px;
   left: 60px;
 }
 
@@ -370,7 +370,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 
   font-weight: 800;
   font-size: 18px;
@@ -475,7 +475,7 @@ a {
 
   box-sizing: border-box;
   width: 1160px;
-  height: 163px;
+  height: 162px;
 
   background-color: #f7e296;
 }
@@ -558,8 +558,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 10px;
   box-sizing: border-box;
+  padding: 0 10px;
 
   font-weight: 800;
   font-size: 18px;
@@ -770,11 +770,11 @@ a {
 }
 
 .promo-table {
-  table-layout: fixed;
   -ms-flex-order: 4;
   order: 4;
 
   border-collapse: collapse;
+  table-layout: fixed;
 
   -webkit-box-ordinal-group: 5;
 }
@@ -808,7 +808,7 @@ a {
 }
 
 .promo-row-bottom .promo-cell {
-  padding-top: 11px;
+  padding-top: 8px;
 }
 
 .promo-row-bottom {
@@ -819,18 +819,19 @@ a {
 }
 
 .promo-cell {
-  text-align: left;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+
   vertical-align: bottom;
+  text-align: left;
 }
 
 .promo-follow-btn {
   -ms-flex-order: 3;
   order: 3;
   width: 220px;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
 
   -webkit-box-ordinal-group: 4;
 }
@@ -878,7 +879,7 @@ a {
 
 .popular {
   min-height: 238px;
-  margin-bottom: 179px;
+  margin-bottom: 181px;
 }
 
 .popular-list {
@@ -896,6 +897,7 @@ a {
 }
 
 .popular-item {
+  box-sizing: border-box;
   width: 160px;
   padding-top: 193px;
 
@@ -911,6 +913,10 @@ a {
 
   margin: 0;
   padding: 0;
+}
+
+.popular-item:nth-child(2) {
+  padding-right: 33px;
 }
 
 .popular-link:active {
@@ -980,7 +986,7 @@ a {
 }
 
 .services {
-  margin-bottom: 95px;
+  margin-bottom: 94px;
 
   background-color: #e5e5e5;
 }
@@ -1003,7 +1009,7 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 284px;
-  min-height: 169px;
+  min-height: 168px;
   margin: 0;
   padding: 0;
 
@@ -1030,7 +1036,7 @@ a {
 }
 
 .services-control-list::after {
-  right: -7px;
+  bottom: -70px;
 
   height: 70px;
 }
@@ -1133,7 +1139,7 @@ a {
 }
 
 .brands {
-  margin-bottom: 145px;
+  margin-bottom: 146px;
 }
 
 .brands-list {
@@ -1205,7 +1211,6 @@ a {
 }
 
 .reference {
-  min-height: 520px;
   margin-bottom: 82px;
 }
 
@@ -1220,18 +1225,10 @@ a {
 }
 
 .reference-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  justify-content: space-between;
+  flex-direction: column;
   width: 560px;
-
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  min-height: 520px;
 }
 
 .reference-item-title {
@@ -1239,7 +1236,6 @@ a {
 
   margin: 0;
   margin-bottom: 41px;
-  padding: 0;
 }
 
 .reference-item-title::before {
@@ -1260,8 +1256,25 @@ a {
   letter-spacing: 0;
 }
 
+.reference-item:nth-of-type(1) .reference-desc {
+  width: 472px;
+}
+
+.reference-item:nth-of-type(2) .reference-desc {
+  width: 515px;
+}
+
+.reference-item:nth-of-type(1) .reference-desc:last-of-type {
+  margin-bottom: 67px;
+}
+
+.reference-item:nth-of-type(2) .reference-desc:last-of-type {
+  margin-bottom: 40px;
+}
+
 .partners-list {
-  margin: 65px 0 0;
+  margin: 0;
+  margin-bottom: auto;
   padding: 0;
   padding-left: 35px;
 
@@ -1299,17 +1312,13 @@ a {
 
 .reference-follow-btn {
   width: 260px;
-  margin-top: 55px;
-}
-
-.reference-item:last-of-type .reference-follow-btn {
-  margin-top: 68px;
 }
 
 .map-link {
   display: block;
   width: 560px;
   height: 222px;
+  margin-bottom: auto;
 
   background-color: #e9e9e9;
 }
@@ -1318,6 +1327,8 @@ a {
   width: 560px;
   height: 222px;
 }
+
+/* CATALOG PAGE */
 
 .inner-page .header {
   margin-bottom: 37px;
