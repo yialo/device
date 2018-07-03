@@ -303,7 +303,7 @@ a {
   text-align: left;
 }
 
-.auth-item:first-child .auth-link {
+.header .user-link {
   padding-left: 27px;
 
   background-image: url("../img/user.svg");
@@ -360,13 +360,13 @@ a {
   text-align: right;
 }
 
-.shopping-item:first-child .shopping-link {
+.header .compare-link {
   background-image: url("../img/compare.svg");
   background-repeat: no-repeat;
   background-position: 5px 11px;
 }
 
-.shopping-item:last-child .shopping-link {
+.header .cart-link {
   background-image: url("../img/cart.svg");
   background-repeat: no-repeat;
   background-position: 3px 9px;
@@ -1780,7 +1780,7 @@ a {
 .footer .container {
   position: relative;
 
-  padding: 60px 0 0;
+  padding-top: 54px;
 }
 
 .footer .container::before {
@@ -1797,7 +1797,7 @@ a {
 
 .footer-logo {
   top: 60px;
-  left: 0;
+  left: 20px;
 
   color: #ffc600;
 }
@@ -1824,8 +1824,28 @@ a {
   -ms-flex-pack: end;
 }
 
+.footer .user-link {
+  padding-left: 27px;
+
+  background-image: url("../img/user-footer.svg");
+  background-repeat: no-repeat;
+  background-position: 0 9px;
+}
+
 .footer-shopping-menu {
   width: 212px;
+}
+
+.footer .compare-link {
+  background-image: url("../img/compare-footer.svg");
+  background-repeat: no-repeat;
+  background-position: 5px 11px;
+}
+
+.footer .cart-link {
+  background-image: url("../img/cart-footer.svg");
+  background-repeat: no-repeat;
+  background-position: 3px 9px;
 }
 
 .footer-site-block {
@@ -1904,7 +1924,7 @@ a {
 .copyright {
   position: absolute;
   top: 222px;
-  right: 0;
+  right: 20px;
 
   display: block;
 }
