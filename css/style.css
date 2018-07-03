@@ -349,7 +349,7 @@ a {
   -ms-flex-wrap: wrap;
 }
 
-.header .shopping-item:last-child {
+.header-shopping-item:last-child {
   margin-left: 38px;
 }
 
@@ -505,13 +505,16 @@ a {
   display: -ms-flexbox;
   display: flex;
       flex-wrap: wrap;
-  width: 500px;
   margin: 0;
   padding: 0;
 
   list-style-type: none;
 
   -ms-flex-wrap: wrap;
+}
+
+.header-site-menu {
+  width: 500px;
 }
 
 .header .site-menu-item {
@@ -526,11 +529,6 @@ a {
 .header .site-menu-item:nth-child(2) {
   margin-right: auto;
   margin-left: 0;
-}
-
-.header .site-menu-item:nth-child(3) {
-  margin-right: -4px;
-  margin-left: auto;
 }
 
 .site-menu-link {
@@ -1807,14 +1805,10 @@ a {
   display: -ms-flexbox;
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-}
-
-.footer-auth-menu {
-  width: 225px;
 }
 
 .main-page .footer-auth-menu {
@@ -1822,6 +1816,15 @@ a {
 
   -webkit-box-pack: end;
   -ms-flex-pack: end;
+  margin-right: 36px;
+}
+
+.inner-page .footer-auth-menu {
+  margin-right: 38px
+}
+
+.inner-page .footer-auth-ltem:last-child {
+  margin-right: 20px;
 }
 
 .footer .user-link {
@@ -1829,11 +1832,11 @@ a {
 
   background-image: url("../img/user-footer.svg");
   background-repeat: no-repeat;
-  background-position: 0 9px;
+  background-position: 1px 9px;
 }
 
-.footer-shopping-menu {
-  width: 212px;
+.footer-shopping-item:last-child {
+  margin-left: 37px;
 }
 
 .footer .compare-link {
@@ -1845,42 +1848,46 @@ a {
 .footer .cart-link {
   background-image: url("../img/cart-footer.svg");
   background-repeat: no-repeat;
-  background-position: 3px 9px;
+  background-position: 4px 9px;
 }
 
 .footer-site-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: flex-end;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 64px;
 
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
 }
 
 .footer-site-menu {
+  box-sizing: border-box;
+  padding: 0 7px;
   width: 440px;
+  justify-content: space-between;
 }
 
 .footer-details {
-  width: 210px;
+  width: 260px;
   margin: 0;
-  padding: 0;
-
   letter-spacing: 0;
 }
 
+.footer-details:last-of-type {
+  text-align: right;
+}
+
 .footer-social {
+  width: 141px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 160px;
-  height: 40px;
   margin: 0 auto;
   padding: 0;
 
