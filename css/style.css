@@ -155,18 +155,18 @@ a {
 }
 
 .search-field {
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 30px;
-  font-family: "Open Sans", "Verdana", sans-serif;
-  letter-spacing: 0.15px;
-
   flex-grow: 1;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-width: 10px;
   padding-right: 10px;
   padding-left: 38px;
+
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Verdana", sans-serif;
+  letter-spacing: 0.15px;
 
   background-color: transparent;
   background-image: url("../img/search.svg");
@@ -1631,10 +1631,36 @@ a {
 }
 
 .catalog-image {
+  position: relative;
+
   display: block;
   width: 360px;
   height: 380px;
   margin-bottom: 34px;
+}
+
+.new-product::before {
+  content: "new";
+  position: absolute;
+  top: 29px;
+  right: 27px;
+  z-index: 1;
+  padding: 15px 14px;
+
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
 }
 
 .catalog-overlay {
@@ -1813,14 +1839,14 @@ a {
 
 .main-page .footer-auth-menu {
   justify-content: flex-end;
+  margin-right: 36px;
 
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  margin-right: 36px;
 }
 
 .inner-page .footer-auth-menu {
-  margin-right: 38px
+  margin-right: 38px;
 }
 
 .inner-page .footer-auth-ltem:last-child {
@@ -1855,8 +1881,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
+  align-items: flex-end;
   margin-bottom: 64px;
 
   -webkit-box-pack: justify;
@@ -1864,15 +1890,16 @@ a {
 }
 
 .footer-site-menu {
-  box-sizing: border-box;
-  padding: 0 7px;
-  width: 440px;
   justify-content: space-between;
+  box-sizing: border-box;
+  width: 440px;
+  padding: 0 7px;
 }
 
 .footer-details {
   width: 260px;
   margin: 0;
+
   letter-spacing: 0;
 }
 
@@ -1881,13 +1908,13 @@ a {
 }
 
 .footer-social {
-  width: 141px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 141px;
   margin: 0 auto;
   padding: 0;
 
