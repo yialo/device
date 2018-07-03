@@ -157,30 +157,32 @@
           <h2 class="visually-hidden">Список моноподов</h2>
 
           <div class="sorting">
-            <h2 class="sorting-title">Сортировка:</h2>
-            <ul class="sorting-list sorting-type-list">
-              <li class="sorting-type-item current">
-                <a class="sorting-type-btn">По цене</a>
-              </li>
-              <li class="sorting-type-item">
-                <a class="sorting-type-btn" href="#">По типу</a>
-              </li>
-              <li class="sorting-type-item">
-                <a class="sorting-type-btn" href="#">По популярности</a>
-              </li>
-            </ul>
-            <ul class="sorting-list sorting-direction-list">
-              <li class="sorting-direction-item">
-                <a class="sorting-direction-btn" href="#">
-                  <span class="visually-hidden">В обратном порядке</span>
+            <div class="sorting-wrapper">
+              <h2 class="sorting-title">Сортировка:</h2>
+              <ul class="sorting-list sorting-type-list">
+                <li class="sorting-type-item current">
+                  <a class="sorting-btn">По цене</a>
+                </li>
+                <li class="sorting-type-item">
+                  <a class="sorting-btn" href="#">По типу</a>
+                </li>
+                <li class="sorting-type-item">
+                  <a class="sorting-btn" href="#">По популярности</a>
+                </li>
+              </ul>
+              <ul class="sorting-list sorting-direction-list">
+                <li class="sorting-direction-item">
+                  <a class="sorting-btn" href="#">
+                    <span class="visually-hidden">В обратном порядке</span>
+                    </a>
+                </li>
+                <li class="sorting-direction-item current">
+                  <a class="sorting-btn">
+                    <span class="visually-hidden">В прямом порядке</span>
                   </a>
-              </li>
-              <li class="sorting-direction-item current">
-                <a class="sorting-direction-btn">
-                  <span class="visually-hidden">В прямом порядке</span>
-                </a>
-              </li>
-            </ul>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div class="catalog">
@@ -191,10 +193,12 @@
                   <a class="btn follow-btn catalog-btn" href="#">В корзину</a>
                   <a class="catalog-compare-btn" href="#">Добавить к сравнению</a>
                 </div>
-                <h3 class="catalog-item-title">
-                  <a class="catalog-link" href="#">Любительская селфи-палка</a>
-                </h3>
-                <span class="catalog-price">500 руб.</span>
+                <div class="catalog-desc">
+                  <h3 class="catalog-title">
+                    <a class="catalog-link" href="#">Любительская селфи-палка</a>
+                  </h3>
+                  <span class="catalog-price">500 руб.</span>
+                </div>
               </li>
               <li class="catalog-item">
                 <img class="catalog-image" src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
@@ -202,10 +206,12 @@
                   <a class="btn follow-btn catalog-btn" href="#">В корзину</a>
                   <a class="catalog-compare-btn" href="#">Добавить к сравнению</a>
                 </div>
-                <h3 class="catalog-item-title">
-                  <a class="catalog-link" href="#">Профессиональная селфи-палка</a>
-                </h3>
-                <span class="catalog-price">1500 руб.</span>
+                <div class="catalog-desc">
+                  <h3 class="catalog-title">
+                    <a class="catalog-link" href="#">Профессиональная селфи-палка</a>
+                  </h3>
+                  <span class="catalog-price">1500 руб.</span>
+                </div>
               </li>
               <li class="catalog-item">
                 <img class="catalog-image" src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
@@ -213,10 +219,12 @@
                   <a class="btn follow-btn catalog-btn" href="#">В корзину</a>
                   <a class="catalog-compare-btn" href="#">Добавить к сравнению</a>
                 </div>
-                <h3 class="catalog-item-title">
-                  <a class="catalog-link" href="#">Непотопляемая селфи-палка</a>
-                </h3>
-                <span class="catalog-price">2500 руб.</span>
+                <div class="catalog-desc">
+                  <h3 class="catalog-title">
+                    <a class="catalog-link" href="#">Непотопляемая селфи-палка</a>
+                  </h3>
+                  <span class="catalog-price">2500 руб.</span>
+                </div>
               </li>
               <li class="catalog-item new-product">
                 <img class="catalog-image" src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
@@ -224,18 +232,19 @@
                   <a class="btn follow-btn catalog-btn" href="#">В корзину</a>
                   <a class="catalog-compare-btn" href="#">Добавить к сравнению</a>
                 </div>
-                <h3 class="catalog-item-title">
-                  <a class="catalog-link" href="#">Селфи-палка «Следуй за мной»</a>
-                </h3>
-                <span class="catalog-price">4900 руб.</span>
+                <div class="catalog-desc">
+                  <h3 class="catalog-title">
+                    <a class="catalog-link" href="#">Селфи-палка «Следуй за мной»</a>
+                  </h3>
+                  <span class="catalog-price">4900 руб.</span>
+                </div>
               </li>
             </ul>
           </div>
 
+          <div class="pagination">
+          <a class="pagination-direction-btn" href="#">Назад</a>
           <ul class="pagination-list">
-            <li class="pagination-item">
-              <a class="pagination-direction-btn" href="#">Назад</a>
-            </li>
             <li class="pagination-item current">
               <a class="pagination-number-btn">1</a>
             </li>
@@ -245,10 +254,9 @@
             <li class="pagination-item">
               <a class="pagination-number-btn" href="#">3</a>
             </li>
-            <li class="pagination-item">
-              <a class="pagination-direction-btn" href="#">Вперед</a>
-            </li>
           </ul>
+          <a class="pagination-direction-btn" href="#">Вперед</a>
+          </div>
         </section>
 
       </div>
