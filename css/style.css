@@ -1974,13 +1974,13 @@ a {
 }
 
 .pagination-direction-btn:first-child {
-  margin-left: 0;
   margin-right: 209px;
+  margin-left: 0;
 }
 
 .pagination-direction-btn:last-child {
-  margin-left: auto;
   margin-right: 0;
+  margin-left: auto;
 }
 
 .pagination-direction-btn:hover,
@@ -2217,8 +2217,9 @@ a {
 
 .modal {
   position: relative;
+  z-index: 5;
 
-  margin: 40px 20px; /* TEMPORARY */
+  margin: 20px auto; /* ! TEMPORARY ! */
 
   -webkit-box-shadow: 0 7px 20px 3px rgba(0, 0, 0, 0.2);
           box-shadow: 0 7px 20px 3px rgba(0, 0, 0, 0.2);
@@ -2228,8 +2229,9 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 960px;
-  min-height: 553px;
-  padding: 100px;
+  padding-top: 90px;
+  padding-right: 100px;
+  padding-left: 100px;
 }
 
 .feedback-form {
@@ -2244,20 +2246,25 @@ a {
   -ms-flex-wrap: wrap;
 }
 
+.feedback-item {
+  margin: 0;
+  margin-bottom: 30px;
+  padding-top: 3px;
+}
+
 .feedback-input-item {
   width: 360px;
 }
 
 .feedback-textarea-item {
   width: 760px;
-}
-
-.feedback-item {
-  margin: 0;
-  padding: 0;
+  margin-bottom: 32px;
 }
 
 .feedback-item-title {
+  display: block;
+  margin-bottom: 7px;
+
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -2268,7 +2275,7 @@ a {
 .feedback-field {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0;
+  padding-left: 16px;
 
   font-weight: 400;
   font-size: 14px;
@@ -2320,21 +2327,25 @@ a {
 .feedback-textarea-item .feedback-field {
   width: 760px;
   height: 156px;
+  padding-top: 12px;
 }
 
 .feedback-btn {
   width: 200px;
+  margin-bottom: 78px;
 }
 
 .modal-map {
   width: 960px;
   height: 559px;
+
+  background-color: #e5e3df;
 }
 
 .modal-close-btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 22px;
+  right: 22px;
 
   width: 55px;
   height: 55px;
