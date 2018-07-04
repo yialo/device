@@ -147,7 +147,6 @@ a {
   display: flex;
   justify-content: space-between;
   width: 440px;
-  min-height: 49px;
   margin-right: 100px;
 
   -webkit-box-pack: justify;
@@ -237,7 +236,7 @@ a {
   flex-shrink: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 9px 17px 10px;
+  padding: 14px 17px 14px 18px;
 
   vertical-align: middle;
   text-align: center;
@@ -248,6 +247,8 @@ a {
   visibility: hidden;
 
   -ms-flex-negative: 0;
+  transition-property: visibility;
+  transition-duration: 1ms;
 }
 
 .search-btn:hover::before,
@@ -267,7 +268,8 @@ a {
   visibility: visible;
 }
 
-.search-btn:hover {
+.search-btn:hover,
+.search-btn:focus {
   color: #ffffff;
 
   background-color: #000000;
@@ -450,7 +452,6 @@ a {
 }
 
 .header-catalog-item {
-  min-height: 36px;
   margin-right: 60px;
 
   font-weight: 300;
@@ -637,6 +638,10 @@ a {
   color: #464646;
 }
 
+.promo {
+  margin-bottom: 68px;
+}
+
 .promo .container {
   position: relative;
 }
@@ -653,7 +658,6 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 1160px;
-  min-height: 594px;
   padding: 20px 0;
 }
 
@@ -863,7 +867,7 @@ a {
 .promo-control-list {
   position: absolute;
   right: 103px;
-  bottom: 253px;
+  bottom: 185px;
 
   display: -webkit-box;
   display: -ms-flexbox;
@@ -902,7 +906,6 @@ a {
 }
 
 .popular {
-  min-height: 238px;
   margin-bottom: 181px;
 }
 
@@ -1034,7 +1037,6 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 284px;
-  min-height: 168px;
   margin: 0;
   padding: 0;
 
