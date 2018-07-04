@@ -569,6 +569,12 @@ a {
   letter-spacing: 0.47px;
 }
 
+.btnfix {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
 .btn {
   position: relative;
 
