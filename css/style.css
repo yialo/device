@@ -210,26 +210,6 @@ a {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.search-field:focus::-webkit-input-placeholder,
-.search-form:active .search-field::-webkit-input-placeholder {
-  visibility: hidden;
-}
-
-.search-field:focus:-ms-input-placeholder,
-.search-form:active .search-field:-ms-input-placeholder {
-  visibility: hidden;
-}
-
-.search-field:focus::-ms-input-placeholder,
-.search-form:active .search-field::-ms-input-placeholder {
-  visibility: hidden;
-}
-
-.search-field:focus::placeholder,
-.search-form:active .search-field::placeholder {
-  visibility: hidden;
-}
-
 .search-btn {
   position: relative;
 
@@ -246,9 +226,10 @@ a {
   outline: 0;
   visibility: hidden;
 
-  -ms-flex-negative: 0;
-  transition-property: visibility;
   transition-duration: 1ms;
+  transition-property: visibility;
+
+  -ms-flex-negative: 0;
 }
 
 .search-btn:hover::before,
@@ -1101,7 +1082,6 @@ a {
 }
 
 .services-list {
-  min-height: 288px;
   margin: 0;
   margin-left: 116px;
   padding: 0;
@@ -1115,6 +1095,7 @@ a {
 
   display: none;
   width: 460px;
+  margin-bottom: 120px;
 }
 
 .services-radio:nth-of-type(1):checked ~ .services-list .services-item:nth-child(1),
@@ -1189,7 +1170,6 @@ a {
   position: relative;
 
   width: 260px;
-  min-height: 100px;
 }
 
 .brands-underlay {
@@ -1198,7 +1178,7 @@ a {
   z-index: -1;
 
   width: 260px;
-  min-height: 100px;
+  height: 100px;
 
   background-color: #d8d8d8;
   background-repeat: no-repeat;
@@ -1309,7 +1289,6 @@ a {
 
 .partners-list {
   margin: 0;
-  margin-bottom: auto;
   padding: 0;
   padding-left: 35px;
 
@@ -1347,13 +1326,13 @@ a {
 
 .reference-follow-btn {
   width: 260px;
+  margin-top: auto;
 }
 
 .map-link {
   display: block;
   width: 560px;
   height: 222px;
-  margin-bottom: auto;
 
   background-color: #e9e9e9;
 }
@@ -1376,7 +1355,6 @@ a {
 .page-title {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  min-height: 48px;
   margin: 0 0 24px;
   padding: 0 60px;
 
@@ -1394,7 +1372,6 @@ a {
   display: flex;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  min-height: 24px;
   margin: 0 0 46px;
   padding: 0 60px;
 
@@ -1501,37 +1478,30 @@ a {
 .filter-form {
   align-self: flex-end;
   width: 200px;
-  padding-top: 81px;
+  padding-top: 69px;
   padding-right: 68px;
 
   -ms-flex-item-align: end;
 }
 
-.filter-group {
-  position: relative;
+.filter-group-wrapper {
+  box-sizing: border-box;
+  padding-top: 10px;
 
+  border-top: 2px solid #000000;
+}
+
+.filter-group {
   margin: 0;
   padding: 0;
 
   border-style: none;
 }
 
-.filter-group::before {
-  content: "";
-  position: absolute;
-  top: -12px;
-
-  width: 100%;
-  height: 2px;
-
-  background-color: #000000;
-}
-
-.filter-price {
-  margin-bottom: 44px;
-}
-
 .filter-group-title {
+  position: relative;
+
+  display: block;
   margin: 0;
   padding: 0;
 
@@ -1540,6 +1510,10 @@ a {
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
   letter-spacing: 0.18px;
+}
+
+.filter-price-wrapper {
+  margin-bottom: 32px;
 }
 
 .filter-price .filter-group-title {
@@ -1601,6 +1575,22 @@ a {
   letter-spacing: 0;
 }
 
+.filter-color-wrapper {
+  margin-bottom: 31px;
+}
+
+.filter-color .filter-group-title {
+  margin-bottom: 18px;
+}
+
+.filter-bluetooth .filter-group-title {
+  margin-bottom: 18px;
+}
+
+.filter-bluetooth-wrapper {
+  margin-bottom: 31px;
+}
+
 .filter-option-list {
   margin: 0;
   padding: 0;
@@ -1626,22 +1616,6 @@ a {
 
   background-repeat: no-repeat;
   background-position: left;
-}
-
-.filter-color {
-  margin-bottom: 43px;
-}
-
-.filter-color .filter-group-title {
-  margin-bottom: 18px;
-}
-
-.filter-bluetooth .filter-group-title {
-  margin-bottom: 18px;
-}
-
-.filter-bluetooth {
-  margin-bottom: 31px;
 }
 
 .filter-checkbox-field:checked + .filter-option-title:active::before,
@@ -2035,17 +2009,14 @@ a {
 /* Footer */
 
 .footer {
-  min-height: 323px;
-
   color: #ffffff;
-
   background-color: #464646;
 }
 
 .footer .container {
   position: relative;
-
   padding-top: 54px;
+  padding-bottom: 67px;
 }
 
 .footer .container::before {
@@ -2329,7 +2300,8 @@ a {
 .feedback-field[type="text"],
 .feedback-field[type="email"] {
   width: 360px;
-  height: 50px;
+  padding-top: 12px;
+  padding-bottom: 14px;
 }
 
 .feedback-textarea-item .feedback-field {
