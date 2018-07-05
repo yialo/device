@@ -235,7 +235,8 @@ a {
 .search-btn:hover::before,
 .search-btn:focus::before,
 .search-btn:active::before,
-.search-field:focus ~ .search-btn::before {
+.search-field:focus ~ .search-btn::before,
+.search-field:valid ~ .search-btn::before {
   content: "";
   position: absolute;
   right: 0;
@@ -246,7 +247,8 @@ a {
   border-bottom: 2px solid #000000;
 }
 
-.search-field:focus ~ .search-btn {
+.search-field:focus ~ .search-btn,
+.search-field:valid ~ .search-btn {
   visibility: visible;
 }
 
