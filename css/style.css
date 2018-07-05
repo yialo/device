@@ -233,6 +233,7 @@ a {
 }
 
 .search-btn:hover::before,
+.search-btn:focus::before,
 .search-btn:active::before,
 .search-field:focus ~ .search-btn::before {
   content: "";
