@@ -655,9 +655,9 @@ a {
 }
 
 .promo-list {
+  min-height: 594px;
   margin: 0;
   padding: 0;
-  min-height: 594px;
 
   list-style-type: none;
 }
@@ -875,8 +875,8 @@ a {
 
 .promo-control-list {
   position: absolute;
-  right: 103px;
   top: 329px;
+  right: 103px;
 
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1104,6 +1104,7 @@ a {
 }
 
 .services-list {
+  min-height: 288px;
   margin: 0;
   margin-left: 116px;
   padding: 0;
@@ -1117,7 +1118,6 @@ a {
 
   display: none;
   width: 460px;
-  margin-bottom: 120px;
 }
 
 .services-radio:nth-of-type(1):checked ~ .services-list .services-item:nth-child(1),
