@@ -5,6 +5,7 @@
     <title>Моноподы для селфи – Каталог товаров | HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/outline.css"> -->
   </head>
   <body class="inner-page">
     <header class="header">
@@ -98,62 +99,56 @@
               <h2 class="filter-title">Фильтр:</h2>
             </div>
               <form class="filter-form" action="https://echo.htmlacademy.ru" method="get" name="filter-data">
-                <div class="filter-group-wrapper filter-price-wrapper">
-                  <fieldset class="filter-group filter-price">
-                   <legend class="filter-group-title">Стоимость</legend>
-                     <div class="filter-scale">
-                      <div class="filter-bar"></div>
-                      <div class="filter-toggle filter-toggle-min"></div>
-                      <div class="filter-toggle filter-toggle-max"></div>
-                     </div>
-                     <div class="filter-price-mark">
-                       <span class="filter-price-label">от 0</span>
-                       <span class="filter-price-label">до 5000</span>
-                     </div>
-                  </fieldset>
-                </div>
-                <div class="filter-group-wrapper filter-color-wrapper">
-                  <fieldset class="filter-group filter-color">
-                    <legend class="filter-group-title">Цвет</legend>
-                    <ul class="filter-option-list">
-                      <li class="filter-option-item">
-                        <input class="visually-hidden filter-field filter-checkbox-field" type="checkbox" name="black" value="yes" id="filter-black" checked>
-                        <label class="filter-option-title" for="filter-black">Черный</label>
-                      </li>
-                      <li class="filter-option-item">
-                        <input class="visually-hidden filter-field filter-checkbox-field" type="checkbox" name="white" value="yes" id="filter-white">
-                        <label class="filter-option-title" for="filter-white">Белый</label>
-                      </li>
-                      <li class="filter-option-item">
-                        <input class="visually-hidden filter-field filter-checkbox-field" type="checkbox" name="blue" value="yes" id="filter-blue" checked>
-                        <label class="filter-option-title" for="filter-blue">Синий</label>
-                      </li>
-                      <li class="filter-option-item">
-                        <input class="visually-hidden filter-field filter-checkbox-field" type="checkbox" name="red" value="yes" id="filter-red" checked>
-                        <label class="filter-option-title" for="filter-red">Красный</label>
-                      </li>
-                      <li class="filter-option-item">
-                        <input class="visually-hidden filter-field filter-checkbox-field" type="checkbox" name="pink" value="yes" id="filter-pink">
-                        <label class="filter-option-title" for="filter-pink">Розовый</label>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </div>
-                <div class="filter-group-wrapper filter-bluetooth-wrapper">
-                  <fieldset class="filter-group filter-bluetooth">
-                    <legend class="filter-group-title">Bluetooth</legend>
-                    <ul class="filter-option-list">
-                      <li class="filter-option-item">
-                        <input class="visually-hidden filter-field filter-radio-field" type="radio" name="bluetooth-availability" value="yes" id="bluetooth-yes" checked>
-                        <label class="filter-option-title" for="bluetooth-yes">Есть</label>
-                      </li>
-                      <li class="filter-option-item">
-                        <input class="visually-hidden filter-field filter-radio-field" type="radio" name="bluetooth-availability" value="no" id="bluetooth-no">
-                        <label class="filter-option-title" for="bluetooth-no">Нет</label>
-                      </li>
-                    </ul>
-                  </fieldset>
-                </div>
+                <fieldset class="filter-group filter-price">
+                 <legend class="filter-group-title">Стоимость</legend>
+                 <div class="filter-scale">
+                   <div class="filter-bar"></div>
+                   <div class="filter-toggle filter-toggle-min"></div>
+                   <div class="filter-toggle filter-toggle-max"></div>
+                 </div>
+                 <div class="filter-price-mark">
+                   <span class="filter-price-label">от 0</span>
+                   <span class="filter-price-label">до 5000</span>
+                  </div>
+                </fieldset>
+                <fieldset class="filter-group filter-color">
+                  <legend class="filter-group-title">Цвет</legend>
+                  <ul class="filter-option-list">
+                    <li class="filter-option-item">
+                      <input class="visually-hidden filter-field filter-checkbox-field" type="checkbox" name="black" value="yes" id="filter-black" checked>
+                      <label class="filter-option-title" for="filter-black">Черный</label>
+                    </li>
+                    <li class="filter-option-item">
+                      <input class="visually-hidden filter-field filter-checkbox-field" type="checkbox" name="white" value="yes" id="filter-white">
+                      <label class="filter-option-title" for="filter-white">Белый</label>
+                    </li>
+                    <li class="filter-option-item">
+                      <input class="visually-hidden filter-field filter-checkbox-field" type="checkbox" name="blue" value="yes" id="filter-blue" checked>
+                      <label class="filter-option-title" for="filter-blue">Синий</label>
+                    </li>
+                    <li class="filter-option-item">
+                      <input class="visually-hidden filter-field filter-checkbox-field" type="checkbox" name="red" value="yes" id="filter-red" checked>
+                      <label class="filter-option-title" for="filter-red">Красный</label>
+                    </li>
+                    <li class="filter-option-item">
+                      <input class="visually-hidden filter-field filter-checkbox-field" type="checkbox" name="pink" value="yes" id="filter-pink">
+                      <label class="filter-option-title" for="filter-pink">Розовый</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="filter-group filter-bluetooth">
+                  <legend class="filter-group-title">Bluetooth</legend>
+                  <ul class="filter-option-list">
+                    <li class="filter-option-item">
+                      <input class="visually-hidden filter-field filter-radio-field" type="radio" name="bluetooth-availability" value="yes" id="bluetooth-yes" checked>
+                      <label class="filter-option-title" for="bluetooth-yes">Есть</label>
+                    </li>
+                    <li class="filter-option-item">
+                      <input class="visually-hidden filter-field filter-radio-field" type="radio" name="bluetooth-availability" value="no" id="bluetooth-no">
+                      <label class="filter-option-title" for="bluetooth-no">Нет</label>
+                    </li>
+                  </ul>
+                </fieldset>
                 <button class="btn follow-btn filter-btn" type="submit"><span class="btnfix">Показать</span></button>
               </form>
           </section>

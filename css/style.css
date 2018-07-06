@@ -662,7 +662,6 @@ a {
 .promo-list {
   margin: 0;
   padding: 0;
-
   list-style-type: none;
 }
 
@@ -1512,14 +1511,6 @@ a {
   -ms-flex-item-align: end;
 }
 
-.filter-group-wrapper {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-top: 10px;
-
-  border-top: 2px solid #000000;
-}
-
 .filter-group {
   margin: 0;
   padding: 0;
@@ -1528,11 +1519,10 @@ a {
 }
 
 .filter-group-title {
-  position: relative;
-
-  display: block;
   margin: 0;
-  padding: 0;
+  padding-top: 10px;;
+  border-top: 2px solid #000000;
+  width: 100%;
 
   font-weight: 800;
   font-size: 18px;
@@ -1541,7 +1531,7 @@ a {
   letter-spacing: 0.18px;
 }
 
-.filter-price-wrapper {
+.filter-price {
   margin-bottom: 32px;
 }
 
@@ -1567,6 +1557,7 @@ a {
 }
 
 .filter-toggle {
+  display: block;
   position: absolute;
   top: -10px;
 
@@ -1610,7 +1601,7 @@ a {
   margin-right: 58px;
 }
 
-.filter-color-wrapper {
+.filter-color {
   margin-bottom: 31px;
 }
 
@@ -1618,12 +1609,12 @@ a {
   margin-bottom: 18px;
 }
 
-.filter-bluetooth .filter-group-title {
-  margin-bottom: 18px;
+.filter-bluetooth {
+  margin-bottom: 31px;
 }
 
-.filter-bluetooth-wrapper {
-  margin-bottom: 31px;
+.filter-bluetooth .filter-group-title {
+  margin-bottom: 18px;
 }
 
 .filter-option-list {
@@ -1683,7 +1674,8 @@ a {
   background-image: url("../img/radio-on.svg");
 }
 
-.filter-option-title:hover::before {
+.filter-option-title:hover::before,
+.filter-field:focus + .filter-option-title::before {
   opacity: 0.6;
 }
 
