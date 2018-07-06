@@ -654,6 +654,10 @@ a {
   position: relative;
 }
 
+.promo-radio {
+  visibility: hidden;
+}
+
 .promo-list {
   min-height: 594px;
   margin: 0;
@@ -905,6 +909,16 @@ a {
   cursor: pointer;
 }
 
+.promo-radio[id$="1"]:not(:checked) ~ .promo-control-list .promo-control-label[for$="1"]:hover,
+.promo-radio[id$="2"]:not(:checked) ~ .promo-control-list .promo-control-label[for$="2"]:hover,
+.promo-radio[id$="3"]:not(:checked) ~ .promo-control-list .promo-control-label[for$="3"]:hover {
+  background-image: url("../img/slider-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 12px;
+  opacity: 0.6;
+}
+
 .promo-radio[id$="1"]:checked ~ .promo-control-list .promo-control-label[for$="1"],
 .promo-radio[id$="2"]:checked ~ .promo-control-list .promo-control-label[for$="2"],
 .promo-radio[id$="3"]:checked ~ .promo-control-list .promo-control-label[for$="3"] {
@@ -1036,6 +1050,10 @@ a {
 
   -webkit-box-align: start;
   -ms-flex-align: start;
+}
+
+.services-radio {
+  visibility: hidden;
 }
 
 .services-control-list {
