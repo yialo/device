@@ -247,10 +247,9 @@ a {
   visibility: hidden;
 
   -webkit-transition-duration: 1ms;
-
           transition-duration: 1ms;
   -webkit-transition-property: visibility;
-  transition-property: visibility;
+          transition-property: visibility;
 
   -ms-flex-negative: 0;
 }
@@ -651,10 +650,6 @@ a {
   color: #464646;
 }
 
-.promo {
-  margin-bottom: 68px;
-}
-
 .promo .container {
   position: relative;
 }
@@ -662,15 +657,13 @@ a {
 .promo-list {
   margin: 0;
   padding: 0;
+  min-height: 594px;
+
   list-style-type: none;
 }
 
 .promo-item {
   display: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 1160px;
-  padding: 20px 0;
 }
 
 .promo-radio:nth-of-type(1):checked ~ .promo-list .promo-item:nth-child(1),
@@ -680,6 +673,10 @@ a {
   display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 1160px;
+  padding: 20px 0;
 
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -879,7 +876,7 @@ a {
 .promo-control-list {
   position: absolute;
   right: 103px;
-  bottom: 185px;
+  top: 329px;
 
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1314,11 +1311,11 @@ a {
 
 .partners-list {
   margin: 0;
+  margin-bottom: 54px;
   padding: 0;
   padding-left: 35px;
 
   list-style-type: none;
-  margin-bottom: 54px;
 }
 
 .partners-item {
@@ -1519,16 +1516,17 @@ a {
 }
 
 .filter-group-title {
-  margin: 0;
-  padding-top: 10px;;
-  border-top: 2px solid #000000;
   width: 100%;
+  margin: 0;
+  padding-top: 10px;
 
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
   letter-spacing: 0.18px;
+
+  border-top: 2px solid #000000;;
 }
 
 .filter-price {
@@ -1557,10 +1555,10 @@ a {
 }
 
 .filter-toggle {
-  display: block;
   position: absolute;
   top: -10px;
 
+  display: block;
   width: 4px;
   height: 4px;
 
@@ -1719,12 +1717,13 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  align-items: baseline;
   width: 760px;
+
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  -ms-flex-wrap: wrap;
 }
 
 .sorting-title {
@@ -1744,12 +1743,13 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
   list-style-type: none;
+
+  -ms-flex-wrap: wrap;
 }
 
 .sorting-type-item {
@@ -1849,7 +1849,6 @@ a {
   z-index: 1;
 
   -webkit-box-sizing: border-box;
-
           box-sizing: border-box;
   width: 60px;
   height: 60px;
@@ -1930,12 +1929,13 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
+  align-items: baseline;
+
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-pack: justify;
+  -ms-flex-align: baseline;
+  -ms-flex-pack: justify;
 }
 
 .catalog-title {
@@ -2139,23 +2139,24 @@ a {
   display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
   margin-bottom: 64px;
 
+  -webkit-box-align: end;
   -webkit-box-pack: justify;
+  -ms-flex-align: end;
   -ms-flex-pack: justify;
 }
 
 .footer-site-menu {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 440px;
   padding: 0 7px;
+
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
 }
 
 .footer-details {
@@ -2173,9 +2174,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 141px;
@@ -2185,7 +2184,9 @@ a {
   list-style-type: none;
 
   -webkit-box-align: center;
+  -webkit-box-pack: center;
   -ms-flex-align: center;
+  -ms-flex-pack: center;
   -ms-flex-pack: distribute;
 }
 
