@@ -2281,26 +2281,71 @@ a {
 
 .footer .user-link {
   padding-left: 28px;
+}
 
+.footer .user-link::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 13px;
+  height: 12px;
   background-image: url("../img/user-footer.svg");
   background-repeat: no-repeat;
-  background-position: 1px 9px;
+  background-position: center;
 }
 
 .footer-shopping-item:last-child {
   margin-left: 37px;
 }
 
-.footer .compare-link {
-  background-image: url("../img/compare-footer.svg");
-  background-repeat: no-repeat;
-  background-position: 5px 11px;
+.footer .auth-link:link,
+.footer .shopping-link:link {
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.footer .cart-link {
+.footer .auth-link:hover,
+.footer .shopping-link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer .auth-link:active,
+.footer .shopping-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer .compare-link::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 3px;
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/compare-footer.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer .cart-link::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 3px;
+  width: 13px;
+  height: 12px;
   background-image: url("../img/cart-footer.svg");
   background-repeat: no-repeat;
-  background-position: 4px 9px;
+  background-position: center;
+}
+
+.footer .auth-link:hover::before,
+.footer .shopping-link:hover::before {
+  opacity: 0.6;
+}
+
+.footer .auth-link:active::before,
+.footer .shopping-link:active::before {
+  opacity: 0.3;
 }
 
 .footer-site-block {
