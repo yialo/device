@@ -519,16 +519,23 @@ a {
 
 .header-catalog-menu {
   display: none;
+  width: 1160px;
+  height: 162px;
+  margin: 0;
+  padding: 20px 60px 32px;
+
+  list-style-type: none;
+
+  background-color: #f7e296;
+  position: absolute;
+  top: 24px;
+  left: -60px;
+  z-index: 1;
 }
 
 .header-catalog-menu:hover,
 .header-catalog-title:hover ~ .header-catalog-menu,
 .header-catalog-title:focus ~ .header-catalog-menu {
-  position: absolute;
-  top: 24px;
-  left: -60px;
-  z-index: 1;
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -538,15 +545,6 @@ a {
   align-content: flex-start;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 1160px;
-  height: 162px;
-  margin: 0;
-  padding: 20px 60px 32px;
-
-  list-style-type: none;
-
-  background-color: #f7e296;
-
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -ms-flex-line-pack: start;
@@ -2589,7 +2587,7 @@ a {
   margin-bottom: 78px;
 }
 
-.show {
+.modal-show {
   display: block;
 
   -webkit-animation-name: bounce;
@@ -2605,8 +2603,4 @@ a {
           animation-duration: 0.5s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-}
-
-.modal-map:focus {
-  border: 5px solid red;
 }
