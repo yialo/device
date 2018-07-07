@@ -2375,7 +2375,7 @@ a {
 }
 
 .feedback-item-title {
-  display: block;
+  display: inline-block;
   margin-bottom: 7px;
 
   font-weight: 800;
@@ -2431,14 +2431,14 @@ a {
   background-color: rgba(237, 181, 181, 0.5);
 }
 
-.feedback-field[type="text"],
-.feedback-field[type="email"] {
+.feedback-fullname,
+.feedback-email {
   width: 360px;
   padding-top: 12px;
   padding-bottom: 14px;
 }
 
-.feedback-textarea-item .feedback-field {
+.feedback-textarea {
   width: 760px;
   height: 156px;
   padding-top: 12px;
