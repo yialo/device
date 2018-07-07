@@ -9,7 +9,6 @@ var linkMap = document.querySelector('.map-link');
 var modalMap = document.querySelector('.modal-map');
 var modalMapClose = document.querySelector('.modal-map .modal-close-btn');
 var modalOverlay = document.querySelector('.modal-overlay');
-var modalMapFocus = modalFeedback.querySelector('.modal-map:focus');
 
 linkFeedback.addEventListener('click', function(evt) {
   evt.preventDefault();
