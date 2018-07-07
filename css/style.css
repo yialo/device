@@ -42,33 +42,95 @@
 
 /* Animation */
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0% {
-    transform: translatey(-2000px);
+    -webkit-transform: translatey(-2000px);
+            transform: translatey(-2000px);
   }
   70% {
-    transform: translatey(50px);
+    -webkit-transform: translatey(50px);
+            transform: translatey(50px);
   }
   85% {
-    transform: translatey(-20px);
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
   }
   95% {
-    transform: translatey(10px);
+    -webkit-transform: translatey(10px);
+            transform: translatey(10px);
   }
   100% {
-    transform: translatey(0);
+    -webkit-transform: translatey(0);
+            transform: translatey(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translatey(-2000px);
+            transform: translatey(-2000px);
+  }
+  70% {
+    -webkit-transform: translatey(50px);
+            transform: translatey(50px);
+  }
+  85% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  95% {
+    -webkit-transform: translatey(10px);
+            transform: translatey(10px);
+  }
+  100% {
+    -webkit-transform: translatey(0);
+            transform: translatey(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translatex(5px);
+            transform: translatex(5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translatex(-5px);
+            transform: translatex(-5px);
   }
 }
 
 @keyframes shake {
-  0%, 100% {
-    transform: translatex(0);
+  0%,
+  100% {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
   }
-  10%, 30%, 50%, 70%, 90% {
-    transform: translatex(5px);
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translatex(5px);
+            transform: translatex(5px);
   }
-  20%, 40%, 60%, 80% {
-    transform: translatex(-5px);
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translatex(-5px);
+            transform: translatex(-5px);
   }
 }
 
@@ -120,7 +182,8 @@ a {
 /* Header */
 
 .header {
-  padding: 40px 0 0;
+  padding: 0;
+  padding-top: 40px;
 }
 
 .navigation {
@@ -1184,7 +1247,8 @@ a {
 }
 
 .services-item-title {
-  margin: 0 0 30px;
+  margin: 0;
+  margin-bottom: 30px;
   padding: 0;
 }
 
@@ -1427,7 +1491,8 @@ a {
 .page-title {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0 0 24px;
+  margin: 0;
+  margin-bottom: 24px;
   padding: 0 60px;
 
   font-weight: 800;
@@ -1442,12 +1507,16 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+      flex-wrap: wrap;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0 0 46px;
+  margin: 0;
+  margin-bottom: 46px;
   padding: 0 60px;
 
   list-style-type: none;
+
+  -ms-flex-wrap: wrap;
 }
 
 .breadcrumbs-item {
@@ -2090,12 +2159,15 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+      flex-wrap: wrap;
   margin: 0;
   margin-bottom: 21px;
   padding: 0;
   padding-top: 25px;
 
   list-style-type: none;
+
+  -ms-flex-wrap: wrap;
 }
 
 .pagination-item:not(:last-child) {
@@ -2243,6 +2315,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+      flex-wrap: wrap;
   justify-content: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2257,6 +2330,7 @@ a {
   -ms-flex-align: center;
   -ms-flex-pack: center;
   -ms-flex-pack: distribute;
+  -ms-flex-wrap: wrap;
 }
 
 .social-item:not(:last-child) {
@@ -2492,14 +2566,20 @@ a {
 
 .show {
   display: block;
-  animation-name: bounce;
-  animation-duration: 0.6s;
+
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 .modal-error {
-  animation-name: shake;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 
 #map {
