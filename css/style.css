@@ -522,7 +522,8 @@ a {
 }
 
 .header-catalog-menu:hover,
-.header-catalog-title:hover ~ .header-catalog-menu {
+.header-catalog-title:hover ~ .header-catalog-menu,
+.header-catalog-title:focus ~ .header-catalog-menu {
   position: absolute;
   top: 24px;
   left: -60px;
@@ -1647,7 +1648,7 @@ a {
 }
 
 .filter-price {
-  margin-bottom: 27px;
+  margin-bottom: 33px;
 }
 
 .filter-price .filter-group-title {
@@ -1719,7 +1720,7 @@ a {
 .filter-price-label {
   display: inline-block;
 
-  vertical-align: baseline;
+  vertical-align: top;
 }
 
 .filter-price-label:first-child {
@@ -2469,7 +2470,7 @@ a {
 
 .feedback-item {
   margin: 0;
-  padding-top: 3px;
+  padding-top: 6px;
 }
 
 .feedback-input-item {
@@ -2479,11 +2480,12 @@ a {
 
 .feedback-textarea-item {
   width: 760px;
-  margin-bottom: 32px;
+  margin-bottom: 41px;
 }
 
 .feedback-item-title {
   display: inline-block;
+  vertical-align: top;
   margin-bottom: 7px;
 
   font-weight: 800;
@@ -2550,6 +2552,7 @@ a {
   width: 760px;
   height: 156px;
   padding-top: 12px;
+  vertical-align: top;
 }
 
 .feedback-btn {
