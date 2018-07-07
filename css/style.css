@@ -395,19 +395,19 @@ a {
   margin-right: 20px;
 }
 
-.header .auth-link:hover,
+.header .user-link:hover,
 .header .shopping-link:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.header .auth-link:active,
+.header .user-link:active,
 .header .shopping-link:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.logout-link,
-.logout-link:hover,
-.logout-link:active {
+.header .logout-link,
+.header .logout-link:hover,
+.header .logout-link:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1022,7 +1022,17 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 12px 12px;
+  opacity: 0.8;
+}
+
+.promo-radio[id$="1"]:not(:checked) ~ .promo-control-list .promo-control-label[for$="1"]:active,
+.promo-radio[id$="2"]:not(:checked) ~ .promo-control-list .promo-control-label[for$="2"]:active,
+.promo-radio[id$="3"]:not(:checked) ~ .promo-control-list .promo-control-label[for$="3"]:active {
   opacity: 0.6;
+}
+
+.promo-radio:checked ~ .promo-control-list .promo-control-label:active {
+  opacity: 0.8;
 }
 
 .promo-radio[id$="1"]:checked ~ .promo-control-list .promo-control-label[for$="1"],
@@ -2299,18 +2309,24 @@ a {
   margin-left: 37px;
 }
 
-.footer .auth-link:link,
-.footer .shopping-link:link {
+.footer .user-link,
+.footer .shopping-link {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.footer .auth-link:hover,
+.footer .user-link:hover,
 .footer .shopping-link:hover {
   color: rgba(255, 255, 255, 1);
 }
 
-.footer .auth-link:active,
+.footer .user-link:active,
 .footer .shopping-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer .logout-link,
+.footer .logout-link:hover,
+.footer .logout-link:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
