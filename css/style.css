@@ -1808,6 +1808,8 @@ a {
 .filter-option-title {
   position: relative;
 
+  display: block;
+
   font-weight: 300;
   font-size: 14px;
   line-height: 40px;
@@ -1854,12 +1856,8 @@ a {
   background-image: url("../img/radio-on.svg");
 }
 
-.filter-field:focus + .filter-option-title {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-}
-
-.filter-option-title:hover::before {
+.filter-option-title:hover::before,
+.filter-field:focus + .filter-option-title::before {
   opacity: 0.6;
 }
 
