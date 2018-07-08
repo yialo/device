@@ -144,7 +144,7 @@ body {
   line-height: 30px;
   font-family: "Open Sans", "Verdana", sans-serif;
   color: #000000;
-  letter-spacing: 0.15px;
+  letter-spacing: 0.15px; /* УДАЛИТЬ */
 
   background-color: #ffffff;
 }
@@ -212,12 +212,13 @@ a {
   line-height: 48px;
   font-family: "Gilroy", "Arial", sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.48px;
 }
 
 .header-logo {
   top: -23px;
-  left: 60px;
+  left: 57px;
+
+  letter-spacing: 0.78px;
 }
 
 .inner-page .logo:hover {
@@ -717,7 +718,7 @@ a {
   font-size: 47px;
   line-height: 48px;
   font-family: "Gilroy", "Arial", sans-serif;
-  letter-spacing: 0.47px;
+  letter-spacing: 0.6px;
 }
 
 .btnfix {
@@ -914,7 +915,7 @@ a {
 
 .promo-image[src*="3"] {
   top: 47px;
-  left: 30px;
+  left: 31px;
 
   width: 526px;
   height: 334px;
@@ -948,7 +949,7 @@ a {
   font-size: 47px;
   line-height: 56px;
   font-family: "Gilroy", "Arial", sans-serif;
-  letter-spacing: 0.47px;
+  letter-spacing: 0.6px;
 }
 
 .promo-lead::before {
@@ -999,10 +1000,12 @@ a {
   -ms-flex-order: 2;
   order: 2;
   margin-bottom: 43px;
+
+  letter-spacing: 0.15px;
 }
 
 .promo-item:nth-child(1) .promo-desc {
-  width: 481px;
+  width: 485px;
 }
 
 .promo-item:nth-child(2) .promo-desc {
@@ -1117,7 +1120,7 @@ a {
 }
 
 .popular-item:nth-child(2) {
-  padding-right: 33px;
+  padding-right: 35px;
 }
 
 .popular-link:active {
@@ -1325,6 +1328,12 @@ a {
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
+}
+
+.services-desc {
+  width: 440px;
+
+  letter-spacing: 0.25px;
 }
 
 .services-item::before {
@@ -1849,7 +1858,7 @@ a {
 
 .filter-checkbox-field:checked + .filter-option-title:active::before,
 .filter-color .filter-option-title::before {
-  top: -2px;
+  top: 8px;
 
   width: 27px;
   height: 23px;
@@ -1864,7 +1873,7 @@ a {
 
 .filter-radio-field:checked + .filter-option-title:active::before,
 .filter-bluetooth .filter-option-title::before {
-  top: -4px;
+  top: 6px;
 
   width: 25px;
   height: 25px;
@@ -2280,9 +2289,11 @@ a {
 
 .footer-logo {
   top: 60px;
-  left: 20px;
+  left: 17px;
 
   color: #ffc600;
+
+  letter-spacing: 0.58px;
 }
 
 .footer-user-block {
