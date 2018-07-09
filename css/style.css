@@ -217,7 +217,7 @@ a {
 
 .header-logo {
   top: -23px;
-  left: 60px;
+  left: 57px;
 }
 
 .inner-page .logo:hover {
@@ -688,7 +688,7 @@ a {
 }
 
 .header .site-menu-item:nth-child(3) {
-  margin-right: 0;
+  margin-right: -4px;
   margin-left: auto;
 }
 
@@ -1314,7 +1314,7 @@ a {
 }
 
 .services-control-item:nth-child(1) .services-btn {
-  padding-left: 20px;
+  padding-left: 22px;
 }
 
 .services-control-item:nth-child(2) .services-btn {
@@ -1322,7 +1322,7 @@ a {
 }
 
 .services-control-item:nth-child(3) .services-btn {
-  padding-left: 22px;
+  padding-left: 12px;
 }
 
 .services-control-list .services-btn:active {
@@ -1536,17 +1536,22 @@ a {
 }
 
 .reference-item:nth-of-type(1) .reference-item-title {
-  letter-spacing: 0.15px;
+  margin-left: -3px;
+
+  letter-spacing: 0.75px;
 }
 
 .reference-item:nth-of-type(2) .reference-item-title {
-  letter-spacing: 0.4px;
+  margin-left: -3px;
+
+  letter-spacing: 0.8px;
 }
 
 .reference-item-title::before {
   content: "";
   position: absolute;
   top: -53px;
+  left: 3px;
 
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1595,7 +1600,7 @@ a {
   font-size: 16px;
   line-height: 40px;
   font-family: "Gilroy", "Arial", sans-serif;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.15px;
 }
 
 .partners-item::before {
@@ -1657,7 +1662,7 @@ a {
   line-height: 48px;
   font-family: "Gilroy", "Arial", sans-serif;
   text-align: left;
-  letter-spacing: 0.47px;
+  letter-spacing: 0.6px;
 }
 
 .breadcrumbs-list {
@@ -1767,7 +1772,7 @@ a {
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
   text-transform: uppercase;
-  letter-spacing: 3.2px;
+  letter-spacing: 3.7px;
 }
 
 .filter-form {
@@ -2020,7 +2025,7 @@ a {
 
 .sorting-title {
   margin: 0;
-  margin-right: 56px;
+  margin-right: 51px;
   margin-bottom: 23px;
 
   font-weight: 800;
@@ -2028,7 +2033,7 @@ a {
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
   text-transform: uppercase;
-  letter-spacing: 3.2px;
+  letter-spacing: 3.7px;
 }
 
 .sorting-list {
@@ -2052,7 +2057,7 @@ a {
 }
 
 .sorting-type-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 29px;
 }
 
 .sorting-direction-item:last-child {
@@ -2233,20 +2238,26 @@ a {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
-  letter-spacing: 0.18px;
 }
 
-.catalog-item:nth-child(1) .catalog-title,
-.catalog-item:nth-child(3) .catalog-title {
+.catalog-item:nth-child(1) .catalog-title {
   width: 280px;
+  letter-spacing: 0.25px;
 }
 
 .catalog-item:nth-child(2) .catalog-title {
   width: 180px;
+  letter-spacing: 0.3px;
+}
+
+.catalog-item:nth-child(3) .catalog-title {
+  width: 280px;
+  letter-spacing: 0.08px;
 }
 
 .catalog-item:nth-child(4) .catalog-title {
   width: 240px;
+  letter-spacing: 0.28px;
 }
 
 .catalog-price {
@@ -2256,7 +2267,7 @@ a {
   font-family: "Gilroy", "Arial", sans-serif;
   text-align: right;
   color: #464646;
-  letter-spacing: 0.16px;
+  letter-spacing: 0.45px;
 }
 
 .pagination {
@@ -2280,20 +2291,25 @@ a {
 .pagination-direction-btn {
   display: block;
   padding-top: 24px;
+  padding-left: 31px;
   padding-right: 30px;
-  padding-left: 30px;
+  box-sizing: border-box;
 
   text-align: center;
 }
 
 .pagination-direction-btn:first-child {
-  margin-right: 209px;
+  width: 126px;
   margin-left: 0;
+  margin-right: 211px;
 }
 
 .pagination-direction-btn:last-child {
-  margin-right: 0;
+  width: 137px;
   margin-left: auto;
+  margin-right: 0;
+
+  letter-spacing: 3.8px;
 }
 
 .pagination-direction-btn:hover,
@@ -2368,7 +2384,7 @@ a {
 
 .footer-logo {
   top: 60px;
-  left: 20px;
+  left: 17px;
 
   color: #ffc600;
 }
