@@ -1313,6 +1313,18 @@ a {
           transform: scaley(5);
 }
 
+.services-control-item:nth-child(1) .services-btn {
+  padding-left: 20px;
+}
+
+.services-control-item:nth-child(2) .services-btn {
+  padding-left: 14px;
+}
+
+.services-control-item:nth-child(3) .services-btn {
+  padding-left: 22px;
+}
+
 .services-control-list .services-btn:active {
   color: #f7e184;
 }
@@ -1385,7 +1397,7 @@ a {
 }
 
 .services-item:nth-child(3) .services-desc {
-  width: 445px;
+  width: 440px;
   letter-spacing: 0.25px;
 }
 
@@ -1622,6 +1634,7 @@ a {
 .reference-follow-btn {
   width: 260px;
   margin-top: auto;
+  padding-left: 14px;
 }
 
 .inner-page .header {
