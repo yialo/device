@@ -92,12 +92,50 @@
         </ul>
       </div>
 
-      <div class="catalog-wrapper">
+      <header class="catalog-header">
 
-          <section class="pane filter-pane">
+          <div class="pane left-pane">
             <div class="filter-header">
-              <h2 class="filter-title">Фильтр:</h2>
+              <p class="filter-title">Фильтр:</p>
             </div>
+          </div>
+
+          <div class="pane right-pane">
+            <div class="sorting">
+              <h2 class="sorting-title">Сортировка:</h2>
+              <ul class="sorting-list sorting-type-list">
+                <li class="sorting-type-item current">
+                  <a class="sorting-btn">По цене</a>
+                </li>
+                <li class="sorting-type-item">
+                  <a class="sorting-btn" href="#">По типу</a>
+                </li>
+                <li class="sorting-type-item">
+                  <a class="sorting-btn" href="#">По популярности</a>
+                </li>
+              </ul>
+              <ul class="sorting-list sorting-direction-list">
+                <li class="sorting-direction-item">
+                  <a class="sorting-btn" href="#">
+                    <span class="visually-hidden">В обратном порядке</span>
+                    </a>
+                </li>
+                <li class="sorting-direction-item current">
+                  <a class="sorting-btn">
+                    <span class="visually-hidden">В прямом порядке</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+      </header>
+
+
+      <div class="catalog-body">
+
+          <div class="pane left-pane">
+            <h2 class="visually-hidden">Фильтр</h2>
             <form class="filter-form" action="https://echo.htmlacademy.ru" method="get" name="filter-data">
               <fieldset class="filter-group filter-price">
                <legend class="filter-group-title">Стоимость</legend>
@@ -155,41 +193,11 @@
               </fieldset>
               <button class="btn follow-btn filter-btn" type="submit"><span class="btnfix">Показать</span></button>
             </form>
-          </section>
-
-        <section class="pane catalog-pane">
-          <h2 class="visually-hidden">Список моноподов</h2>
-
-          <div class="sorting">
-            <div class="sorting-wrapper">
-              <h2 class="sorting-title">Сортировка:</h2>
-              <ul class="sorting-list sorting-type-list">
-                <li class="sorting-type-item current">
-                  <a class="sorting-btn">По цене</a>
-                </li>
-                <li class="sorting-type-item">
-                  <a class="sorting-btn" href="#">По типу</a>
-                </li>
-                <li class="sorting-type-item">
-                  <a class="sorting-btn" href="#">По популярности</a>
-                </li>
-              </ul>
-              <ul class="sorting-list sorting-direction-list">
-                <li class="sorting-direction-item">
-                  <a class="sorting-btn" href="#">
-                    <span class="visually-hidden">В обратном порядке</span>
-                    </a>
-                </li>
-                <li class="sorting-direction-item current">
-                  <a class="sorting-btn">
-                    <span class="visually-hidden">В прямом порядке</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
 
-          <div class="catalog">
+        <div class="pane right-pane">
+          <section class="catalog">
+            <h2 class="visually-hidden">Список моноподов</h2>
             <ul class="catalog-list">
               <li class="catalog-item">
                 <img class="catalog-image" src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
@@ -244,7 +252,7 @@
                 </div>
               </li>
             </ul>
-          </div>
+          </section>
 
           <div class="pagination">
           <a class="pagination-direction-btn" href="#">Назад</a>
@@ -261,7 +269,7 @@
           </ul>
           <a class="pagination-direction-btn" href="#">Вперед</a>
           </div>
-        </section>
+        </div>
 
       </div>
     </main>
