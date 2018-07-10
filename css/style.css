@@ -1922,8 +1922,6 @@ a {
 .filter-option-title {
   position: relative;
 
-  display: block;
-
   font-weight: 300;
   font-size: 14px;
   line-height: 40px;
@@ -1942,7 +1940,7 @@ a {
 
 .filter-checkbox-field:checked + .filter-option-title:active::before,
 .filter-color .filter-option-title::before {
-  top: 8px;
+  top: -2px;
 
   width: 27px;
   height: 23px;
@@ -1957,7 +1955,7 @@ a {
 
 .filter-radio-field:checked + .filter-option-title:active::before,
 .filter-bluetooth .filter-option-title::before {
-  top: 6px;
+  top: -4px;
 
   width: 25px;
   height: 25px;
@@ -1970,8 +1968,7 @@ a {
   background-image: url("../img/radio-on.svg");
 }
 
-.filter-option-title:hover::before,
-.filter-field:focus + .filter-option-title::before {
+.filter-option-title:hover::before {
   opacity: 0.6;
 }
 
@@ -2648,17 +2645,9 @@ a {
 }
 
 .modal-map-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-
   display: block;
   width: 960px;
   height: 559px;
-}
-
-.modal-map-source {
-  position: relative;
 }
 
 .modal-overlay {
