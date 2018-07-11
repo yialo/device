@@ -339,7 +339,7 @@ a {
   position: relative;
 
   -ms-flex-negative: 0;
-        flex-shrink: 0;
+  flex-shrink: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 14px 17px 14px 18px;
@@ -532,11 +532,9 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-
   margin: 0;
 
   list-style-type: none;
-
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -606,7 +604,8 @@ a {
   z-index: 1;
 
   display: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 1160px;
   height: 167px;
   margin: 0;
@@ -898,9 +897,6 @@ a {
   -webkit-box-orient: vertical;
   -ms-flex-direction: column;
       flex-direction: column;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
   width: 560px;
   padding-top: 15px;
 }
@@ -973,16 +969,19 @@ a {
 
 .promo-item:nth-child(1) .promo-desc {
   width: 485px;
+
   letter-spacing: 0.16px;
 }
 
 .promo-item:nth-child(2) .promo-desc {
   width: 440px;
+
   letter-spacing: 0.14px;
 }
 
 .promo-item:nth-child(3) .promo-desc {
   width: 460px;
+
   letter-spacing: 0.14px;
 }
 
@@ -1333,19 +1332,20 @@ a {
 .services-item-title {
   margin: 0;
   margin-bottom: 30px;
+  margin-left: 1px;
   padding: 0;
 }
 
 .services-item:nth-child(1) .services-item-title {
-  letter-spacing: 1.27px;
+  letter-spacing: 1.05px;
 }
 
 .services-item:nth-child(2) .services-item-title {
-  letter-spacing: 0.8px;
+  letter-spacing: 0.7px;
 }
 
 .services-item:nth-child(3) .services-item-title {
-  letter-spacing: 0.8px;
+  letter-spacing: 0.6px;
 }
 
 .services-desc {
@@ -1362,6 +1362,7 @@ a {
 
 .services-item:nth-child(3) .services-desc {
   width: 440px;
+
   letter-spacing: 0.25px;
 }
 
@@ -1501,7 +1502,7 @@ a {
 }
 
 .reference-item:nth-of-type(1) .reference-item-title {
-  margin-left: -3px;
+  margin-left: -2px;
 
   letter-spacing: 0.75px;
 }
@@ -1516,13 +1517,20 @@ a {
   content: "";
   position: absolute;
   top: -53px;
-  left: 3px;
 
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 80px;
 
   border-top: 7px solid #000000;
+}
+
+.reference-item:nth-of-type(1) .reference-item-title::before {
+  left: 2px;
+}
+
+.reference-item:nth-of-type(2) .reference-item-title::before {
+  left: 3px;
 }
 
 .reference-desc {
@@ -1710,11 +1718,13 @@ a {
   -webkit-box-orient: vertical;
   -ms-flex-direction: column;
       flex-direction: column;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .left-pane {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
   width: 348px;
 
@@ -1729,6 +1739,7 @@ a {
 .catalog-header .left-pane {
   padding-top: 23px;
 
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.08)), to(rgba(0, 0, 0, 0.08)));
   background-image: linear-gradient(rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.08) 100%);
 }
 
@@ -1844,8 +1855,8 @@ a {
 
 .filter-form {
   width: 200px;
-  padding-top: 69px;
   margin-right: 68px;
+  padding-top: 69px;
 }
 
 .filter-group {
@@ -2198,21 +2209,25 @@ a {
 
 .catalog-item:nth-child(1) .catalog-title {
   width: 280px;
+
   letter-spacing: 0.25px;
 }
 
 .catalog-item:nth-child(2) .catalog-title {
   width: 180px;
+
   letter-spacing: 0.3px;
 }
 
 .catalog-item:nth-child(3) .catalog-title {
   width: 280px;
+
   letter-spacing: 0.08px;
 }
 
 .catalog-item:nth-child(4) .catalog-title {
   width: 240px;
+
   letter-spacing: 0.25px;
 }
 
@@ -2247,24 +2262,25 @@ a {
 
 .pagination-direction-btn {
   display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-top: 24px;
-  padding-left: 31px;
   padding-right: 30px;
-  box-sizing: border-box;
+  padding-left: 31px;
 
   text-align: center;
 }
 
 .pagination-direction-btn:first-child {
   width: 126px;
-  margin-left: 0;
   margin-right: 211px;
+  margin-left: 0;
 }
 
 .pagination-direction-btn:last-child {
   width: 137px;
-  margin-left: auto;
   margin-right: 0;
+  margin-left: auto;
 
   letter-spacing: 3.8px;
 }
@@ -2683,7 +2699,24 @@ a {
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
   vertical-align: top;
+}
+
+.feedback-item-title[for="fullname"] {
+  margin-left: 1px;
+
+  letter-spacing: 0.05px;
+}
+
+.feedback-item-title[for="email"] {
+  margin-left: 0;
+
   letter-spacing: 0;
+}
+
+.feedback-item-title[for="message"] {
+  margin-left: 1px;
+
+  letter-spacing: 0.2px;
 }
 
 .feedback-field {
@@ -2750,6 +2783,9 @@ a {
 .feedback-btn {
   width: 200px;
   margin-bottom: 78px;
+  padding-left: 12px;
+
+  letter-spacing: 3.8px;
 }
 
 .modal-show {
