@@ -5,7 +5,7 @@ var modalEmail = modalFeedback.querySelector('.feedback-email');
 var modalMessage = modalFeedback.querySelector('.feedback-textarea');
 var modalForm = modalFeedback.querySelector('.feedback-form');
 var modalFeedbackClose = document.querySelector('.modal-feedback .modal-close-btn');
-var linkMap = document.querySelector('.map-source');
+var linkMap = document.querySelector('.map-link');
 var modalMap = document.querySelector('.modal-map');
 var modalMapClose = document.querySelector('.modal-map .modal-close-btn');
 
