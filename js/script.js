@@ -26,6 +26,13 @@ linkMap.addEventListener('click', function(evt) {
   modalMap.classList.add('modal-show');
 });
 
+linkMap.addEventListener('keydown', function(evt) {
+  if (evt.keyCode === 13) {
+    evt.preventDefault();
+    modalMap.classList.add('modal-show');
+  }
+});
+
 modalMapClose.addEventListener('click', function(evt) {
   evt.preventDefault();
   modalMap.classList.remove('modal-show');
