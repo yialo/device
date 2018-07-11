@@ -2586,25 +2586,44 @@ a {
 
 /* Modal */
 
-.modal-feedback {
+.modal {
   position: fixed;
-  top: 20px;
   left: 50%;
   z-index: 2;
 
   display: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   width: 960px;
   margin-left: -480px;
+
+  -webkit-box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-feedback {
+  top: 20px;
+
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-top: 87px;
   padding-right: 100px;
   padding-left: 100px;
 
   background-color: #ffffff;
+}
 
-  -webkit-box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.2);
+.modal-map {
+  top: 50%;
+
+  height: 559px;
+  margin-top: -279px;
+
+  background-color: #e5e3df;
+}
+
+.modal-map-image {
+  display: block;
+  width: 960px;
+  height: 559px;
 }
 
 .modal-close-btn {
