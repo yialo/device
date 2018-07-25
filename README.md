@@ -1,2 +1,2 @@
-# device-draft
-Device project draft repo
+# device
+Device project repo
