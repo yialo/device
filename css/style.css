@@ -173,6 +173,12 @@ a {
   clip: rect(0, 0, 0, 0);
 }
 
+.btnfix {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
 .container {
   width: 1160px;
   margin: 0 auto;
@@ -686,12 +692,6 @@ a {
   line-height: 48px;
   font-family: "Gilroy", "Arial", sans-serif;
   letter-spacing: 0.47px;
-}
-
-.btnfix {
-  position: relative;
-  top: 0;
-  left: 0;
 }
 
 .btn {
