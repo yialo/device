@@ -1,2 +1,2 @@
 # device
-Device project repo
+Device project repository
